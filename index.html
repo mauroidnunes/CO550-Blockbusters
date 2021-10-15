@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>blockbusters</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Black.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Black%20Italic.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Bold.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Bold%20Italic.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Extra%20Bold.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Extra%20Bold%20Italic.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Italic.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Medium.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Medium%20Italic.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Regular.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Semi%20Bold.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Semi%20Bold%20Italic.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/iframe.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background: rgb(0,0,0);">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" style="padding: 0px;height: 72px;z-index: 50;background: linear-gradient(rgba(0,0,0,0.75) 3%, rgba(255,255,255,0));">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="d-flex justify-content-start" style="width: 15%;height: 72px;"><img class="logo" src="assets/img/logofinal.svg"></div>
+            <div style="width: 70%;height: 72px;position: relative;text-align: center;">
+                <div class="d-flex justify-content-center" style="position: absolute;top: 0;left: 0;width: 100%;margin-top: 19px;"><a id="NavButtons" href="#" style="height: 28px;color: rgb(255,255,255);"><i class="material-icons col" id="NavIcon" style="padding: 0px;margin: auto;margin-top: 4px;width: 24px;">home</i>
+                        <p id="NavText" class="col">Home</p>
+                    </a><a id="NavButtons" class="row" href="#" style="height: 28px;color: rgba(255,255,255,0.54);text-align: center;"><i class="material-icons col" id="NavIcon" style="padding: 0px;margin: auto;margin-top: 4px;width: 24px;">explore</i>
+                        <p id="NavText" class="col">Explore</p>
+                    </a><a id="NavButtons" class="row" href="#" style="height: 28px;color: rgba(255,255,255,0.54);text-align: center;"><i class="material-icons col" id="NavIcon" style="padding: 0px;margin: auto;margin-top: 4px;width: 24px;">video_library</i>
+                        <p id="NavText" class="col">Library</p>
+                    </a><a id="NavButtons" class="row" onclick="searchOn()" style="height: 28px;color: rgba(255,255,255,0.54);text-align: center;"><i class="material-icons col" id="NavIconSearch" style="padding: 0px;margin: auto;margin-top: 4px;width: 24px;">search</i>
+                        <p id="NavText" class="col" href="#">Search</p>
+                    </a></div>
+            </div>
+            <div class="d-flex justify-content-end" style="width: 15%;height: 72px;"><img src="assets/img/PXL_20210926_215906741.NIGHT.jpg" style="margin: auto;margin-right: 15px;border-radius: 81px;height: 30px;width: 30px;" onclick="userOn()"></div>
+        </div>
+    </nav>
+    <div id="SearchOverlay">
+        <div style="/*position: fixed;*/width: 100%;height: 72px;display: flex;justify-content: center;">
+            <div class="flex-container" style="height: 54px;margin-top: auto;margin-bottom: auto;width: 800px;background: #212121;color: rgb(68,68,68);border-radius: 3px;border: 1px solid rgb(67,67,67);margin-right: 10px;margin-left: 10px;display: flex;justify-content: stretch;"><i class="material-icons" style="color: rgb(180,180,180);width: 54px;text-align: center;padding-top: 14px;cursor: pointer;" onclick="searchOff()">arrow_back</i><input type="search" style="width: 100%;background: rgba(255,255,255,0);border-style: none;color: rgb(255,255,255);font-weight: 600;padding-right: 56px;padding-left: 0px;" placeholder="Search"></div>
+        </div>
+        <div style="width: 100%;height: 100%;padding-right: 10px;padding-left: 10px;padding-bottom: 9px;">
+            <div class="flex-container search-results" style="background: #212121;border-radius: 3px;border: 1px solid rgb(67,67,67);max-width: 800px;color: rgb(68,68,68);height: 164px;margin: auto;"></div>
+        </div>
+    </div>
+    <div class="content-barrier" style="padding-bottom: 50px;">
+        <div style="margin: 0px;padding: 0px;">
+            <div>
+                <div id="primary-slider" class="splide" style="height: 500px;top: 0;left: 0;width: 100%;position: absolute;">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img class="img-thumbnail" src="assets/img/2.png"></li>
+                            <li class="splide__slide"><img src="assets/img/1.png"></li>
+                            <li class="splide__slide"><img src="assets/img/9.png"></li>
+                            <li class="splide__slide"><img src="assets/img/8.png"></li>
+                        </ul>
+                        <div style="height: 100%;margin-top: -500px;position: absolute;width: 100%;background: linear-gradient(rgba(0,0,0,0.59) 0%, black 100%);"></div>
+                    </div>
+                </div>
+                <div id="secondary-slider" class="splide" style="height: 500px;/*position: absolute;*/top: 0;left: 0;width: 100%;">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide row">
+                                <div class="col-lg">
+                                    <div class="gallery-caption"><img src="assets/img/Shrek_2_logo_used_on_mercindise.png" style="height: 60px;">
+                                        <div style="height: 28px;margin-top: 10px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(255,255,255,0.29);">Action</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(242,189,0,0.29);">8K</label></div>
+                                        <p style="width: 100%;height: 300px;color: #ffffff;margin-top: -10px;"><br><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg vid-div"><iframe width="80%" height="70%" style="margin-top:100px" src="https://www.youtube.com/embed/_MoIr7811Bs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            </li>
+                            <li class="splide__slide row">
+                                <div class="col-lg">
+                                    <div class="gallery-caption"><img src="assets/img/305-3057815_interstellar-interstellar-logo-png.png" style="height: 60px;">
+                                        <div style="height: 28px;margin-top: 10px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(255,255,255,0.29);">Action</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(242,189,0,0.29);">144p</label></div>
+                                        <p style="width: 100%;height: 300px;color: #ffffff;margin-top: -10px;"><br><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg vid-div"><iframe width="80%" height="70%" style="margin-top:100px;boder-radius:3px" src="https://www.youtube.com/embed/zSWdZVtXT7E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            </li>
+                            <li class="splide__slide row">
+                                <div class="col-lg">
+                                    <div class="gallery-caption"><img src="assets/img/Shrek_2_logo_used_on_mercindise.png" style="height: 60px;">
+                                        <div style="height: 28px;margin-top: 10px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(255,255,255,0.29);">Action</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(242,189,0,0.29);">144p</label></div>
+                                        <p style="width: 100%;height: 300px;color: #ffffff;margin-top: -10px;"><br><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg vid-div"><iframe width="80%" height="70%" style="margin-top:100px" src="https://www.youtube.com/embed/V6X5ti4YlG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p id="NavText-1" class="col" style="color: rgb(255,255,255);font-size: 24px;">For you</p>
+            <div id="prrimary-slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><img src="assets/img/2.png"></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><img src="assets/img/1.png"></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><img src="assets/img/9.png"></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><img src="assets/img/8.png"></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><img src="assets/img/8.png"></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><img src="assets/img/8.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <p id="NavText-2" class="col" style="color: rgb(255,255,255);font-size: 24px;">Just released</p>
+        </div>
+    </div>
+    <footer class="d-flex justify-content-center align-items-center" style="height: 100px;border-top: 1px solid rgba(50,50,50,0.67)!important;">
+        <p style="font-weight: 500;color: rgb(98,98,98);font-size: 20px;font-family: 'Inter Bold';">blockbusters© 2021<br></p>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/scroll_colour.js"></script>
+    <script src="assets/js/search_overlay.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/splide.min.js"></script>
+</body>
+
+</html>
