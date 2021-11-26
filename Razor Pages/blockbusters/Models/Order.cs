@@ -6,7 +6,9 @@ namespace blockbusters.Models
     {
         [Key]
         public int OrderID { get; set; }
-        public string OrderDate { get; set; }
-        public bool OrderStatus { get; set; }
+
+        [DataType(DataType.Date)]
+        public DateTime OrderDate { get; set; }
+        public bool OrderStatus { get; set; } = false;
     }
 }

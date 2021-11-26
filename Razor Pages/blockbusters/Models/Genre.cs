@@ -2,9 +2,14 @@
 
 namespace blockbusters.Models
 {
-    public class Rating
+    public class Genre
     {
-        public string RatingID { get; set; }
-        public int RatingScore { get; set; }
+        [Key]
+        public int GenreID { get; set; }
+    }
+
+    public enum GenreEnum
+    {
+        Action, Adventure, Comedy, Mystery, Fantasy, Fiction, Horror, Romance, Satire, SciFi, Thriller, Western
     }
 }
