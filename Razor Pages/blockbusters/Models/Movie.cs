@@ -37,5 +37,8 @@ namespace blockbusters.Models
         [DataType(DataType.Currency)]
         public decimal Price { get; set; }
 
+        public decimal Rating { get; set; } = 0;
+
+
     }
 }

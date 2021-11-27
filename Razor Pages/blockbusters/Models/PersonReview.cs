@@ -12,5 +12,7 @@ namespace blockbusters.Models
         [RegularExpression(@"^.{1,}$", ErrorMessage = "Minimum 1 character required")]
         [StringLength(255, ErrorMessage = "Maximum 255 characters exceeded")]
         public string ReviewText { get; set; }
+
+        public int Likes { get; set; } = 0;
     }
 }
