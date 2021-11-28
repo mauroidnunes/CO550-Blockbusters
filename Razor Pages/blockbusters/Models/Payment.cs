@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace blockbusters.Models
 {
@@ -31,5 +32,10 @@ namespace blockbusters.Models
         [RegularExpression(@"^.{4,}$", ErrorMessage = "Minimum 4 characters required")]
         [StringLength(100, ErrorMessage = "Maximum 100 characters exceeded")]
         public string BillingAddress { get; set; }
+
+        // FOREIGN KEY REFRENCES
+        [ForeignKey("PaymentID")]
+        public ICollection<Person> Person { get; set; }
+
     }
 }

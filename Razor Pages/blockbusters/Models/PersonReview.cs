@@ -4,6 +4,14 @@ namespace blockbusters.Models
 {
     public class PersonReview
     {
+        // FOREIGN KEYS
+        public int MovieID { get; set; }
+        public Movie Movie { get; set; }
+
+        public int PersonID { get; set; }
+        public Person Person { get; set; }
+        // END OF FOREIGN KEYS
+
         [Required]
         [DataType(DataType.DateTime)]
         public DateTime ReviewDate { get; set; }

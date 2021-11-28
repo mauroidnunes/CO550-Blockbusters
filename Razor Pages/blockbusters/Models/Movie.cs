@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace blockbusters.Models
 {
@@ -39,6 +40,15 @@ namespace blockbusters.Models
 
         public decimal Rating { get; set; } = 0;
 
+        // FOREIGN KEYS
+        public int GenreID { get; set; }
+        public Genre Genre { get; set; }
 
+        // FOREIGN KEY REFRENCES
+        [ForeignKey("MovieID")]
+        public ICollection<OrderItem> OrderItem { get; set; }
+
+        [ForeignKey("MovieID")]
+        public ICollection<PersonReview> PersonReview { get; set; }
     }
 }

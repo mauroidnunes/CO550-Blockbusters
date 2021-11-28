@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace blockbusters.Models
 {
@@ -34,5 +35,18 @@ namespace blockbusters.Models
 
         public bool StaffAccount { get; set; } = false;
 
+        // FOREIGN KEYS
+        public int PaymentID { get; set; }
+        public Payment Payment { get; set; }
+
+        // FOREIGN KEY REFRENCES
+        [ForeignKey("PersonID")]
+        public ICollection<Order> Order { get; set; }
+
+        [ForeignKey("PersonID")]
+        public ICollection<PersonReview> PersonReview { get; set; }
+
+        [ForeignKey("PersonID")]
+        public ICollection<PersonGenre> PersonGenre { get; set; }
     }
 }
