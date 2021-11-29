@@ -4,13 +4,8 @@ namespace blockbusters.Models
 {
     public class PersonReview
     {
-        // FOREIGN KEYS
-        public int MovieID { get; set; }
-        public Movie Movie { get; set; }
-
-        public int PersonID { get; set; }
-        public Person Person { get; set; }
-        // END OF FOREIGN KEYS
+        [Key]
+        public int PersonReviewID { get; set; }
 
         [Required]
         [DataType(DataType.DateTime)]
@@ -22,5 +17,10 @@ namespace blockbusters.Models
         public string ReviewText { get; set; }
 
         public int Likes { get; set; } = 0;
+
+        // NAVIGATION PROPERTIES
+        public virtual Movie Movie { get; set; }
+
+        public virtual Person Person { get; set; }
     }
 }

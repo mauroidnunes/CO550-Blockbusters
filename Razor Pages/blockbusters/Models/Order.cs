@@ -10,14 +10,12 @@ namespace blockbusters.Models
 
         [DataType(DataType.Date)]
         public DateTime OrderDate { get; set; }
-        public bool OrderStatus { get; set; } = false;
+        public bool Completed { get; set; } = false;
 
-        // FOREIGN KEYS
-        public int PersonID { get; set; }
-        public Person Person { get; set; }
+        // 
+        public virtual Person Person { get; set; }
 
-        // FOREIGN KEY REFRENCES
-        [ForeignKey("OrderID")]
-        public ICollection<OrderItem> OrderItem { get; set; }
+        // 
+        public virtual ICollection<OrderItem> OrderItem { get; set; }
     }
 }

@@ -18,11 +18,6 @@ namespace blockbusters.Models
         [StringLength(20, ErrorMessage = "Maximum 20 characters exceeded")]
         public string Username { get; set; }
 
-        [Required(ErrorMessage = "Password is required")]
-        [RegularExpression(@"^.{8,}$", ErrorMessage = "Minimum 8 characters required")]
-        [StringLength(20, ErrorMessage = "Maximum 128 characters exceeded")]
-        public string Password { get; set; }
-
         [Required(ErrorMessage = "First Name is required")]
         [RegularExpression(@"^.{2,}$", ErrorMessage = "Minimum 2 characters required")]
         [StringLength(50, ErrorMessage = "Maximum 50 characters exceeded")]
@@ -35,18 +30,14 @@ namespace blockbusters.Models
 
         public bool StaffAccount { get; set; } = false;
 
-        // FOREIGN KEYS
-        public int PaymentID { get; set; }
-        public Payment Payment { get; set; }
+        // NAVIGATION PROPERTIES
+        public virtual Payment Payment { get; set; }
 
-        // FOREIGN KEY REFRENCES
-        [ForeignKey("PersonID")]
-        public ICollection<Order> Order { get; set; }
+        //
+        public virtual ICollection<Order> Order { get; set; }
 
-        [ForeignKey("PersonID")]
-        public ICollection<PersonReview> PersonReview { get; set; }
+        public virtual ICollection<PersonReview> PersonReviews { get; set; }
 
-        [ForeignKey("PersonID")]
-        public ICollection<PersonGenre> PersonGenre { get; set; }
+        public ICollection<PersonGenre> PersonGenres { get; set; }
     }
 }
