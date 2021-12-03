@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NhI8kO2jNC9QRAPFd8h475hOOenqsdYZrFr3loTdU+3OvFfUfVjkgS3GyUi+c78VCF158FKIdfgxQ0FN8SJ2mA==",
+  "dgSpecHash": "0wVuI406BlvXN0Si9gYEb596WOv8wwhSi28GxcBWh0OtJ5bjAUlvoLQcnLCRuz93/8NuNRa3y5Aeyzc0br/Nig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Haroon\\Documents\\GitHub\\CO550-Blockbusters\\blockbusters\\blockbusters.csproj",
+  "projectFilePath": "C:\\Users\\Haroon\\Documents\\GitHub\\asp-team-project-blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Haroon\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Haroon\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.12\\microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",

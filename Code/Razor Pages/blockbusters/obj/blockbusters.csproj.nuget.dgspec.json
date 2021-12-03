@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Haroon\\Documents\\GitHub\\CO550-Blockbusters\\blockbusters\\blockbusters.csproj": {}
+    "C:\\Users\\Haroon\\Documents\\GitHub\\asp-team-project-blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Haroon\\Documents\\GitHub\\CO550-Blockbusters\\blockbusters\\blockbusters.csproj": {
+    "C:\\Users\\Haroon\\Documents\\GitHub\\asp-team-project-blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Haroon\\Documents\\GitHub\\CO550-Blockbusters\\blockbusters\\blockbusters.csproj",
+        "projectUniqueName": "C:\\Users\\Haroon\\Documents\\GitHub\\asp-team-project-blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj",
         "projectName": "blockbusters",
-        "projectPath": "C:\\Users\\Haroon\\Documents\\GitHub\\CO550-Blockbusters\\blockbusters\\blockbusters.csproj",
+        "projectPath": "C:\\Users\\Haroon\\Documents\\GitHub\\asp-team-project-blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj",
         "packagesPath": "C:\\Users\\Haroon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Haroon\\Documents\\GitHub\\CO550-Blockbusters\\blockbusters\\obj\\",
+        "outputPath": "C:\\Users\\Haroon\\Documents\\GitHub\\asp-team-project-blockbusters\\Code\\Razor Pages\\blockbusters\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
