@@ -15,7 +15,8 @@ namespace blockbusters.Models
 
         [Required(ErrorMessage = "Field is required")]
         [RegularExpression(@"^.{8,}$", ErrorMessage = "Minimum 8 characters required")]
-        [StringLength(255, ErrorMessage = "Maximum 255 characters exceeded")]
+        [StringLength(1025, ErrorMessage = "Maximum 1025 characters exceeded")]
+        [DataType(DataType.MultilineText)]
         public string Description { get; set; }
 
         [Required(ErrorMessage = "Field is required")]
@@ -32,23 +33,22 @@ namespace blockbusters.Models
         [StringLength(50, ErrorMessage = "Maximum 50 characters exceeded")]
         public string LeadingProducer { get; set; }
 
-        public string ContentLocation { get; set; } = "/baseimagelocation/example.jpg";
+        public string ContentLocation { get; set; } = "/baseimagelocation/";
 
         [Required(ErrorMessage = "Field is required")]
         [DataType(DataType.Currency)]
+        [Column(TypeName = "money")]
         public decimal Price { get; set; }
 
         public decimal Rating { get; set; } = 0;
 
-        // FOREIGN KEYS
-        public int GenreID { get; set; }
+        //
         public Genre Genre { get; set; }
 
-        // FOREIGN KEY REFRENCES
-        [ForeignKey("MovieID")]
-        public ICollection<OrderItem> OrderItem { get; set; }
+        // NAVIGATION PROPERTIES
 
-        [ForeignKey("MovieID")]
-        public ICollection<PersonReview> PersonReview { get; set; }
+        public virtual ICollection<OrderItem> OrderItem { get; set; }
+
+        public virtual ICollection<PersonReview> PersonReview { get; set; }
     }
 }
