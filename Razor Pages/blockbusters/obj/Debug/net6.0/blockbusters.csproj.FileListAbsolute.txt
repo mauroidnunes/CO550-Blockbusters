@@ -1,9 +1,0 @@
-C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Razor Pages\blockbusters\obj\Debug\net6.0\blockbusters.csproj.AssemblyReference.cache
-C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Razor Pages\blockbusters\obj\Debug\net6.0\blockbusters.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Razor Pages\blockbusters\obj\Debug\net6.0\blockbusters.AssemblyInfoInputs.cache
-C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Razor Pages\blockbusters\obj\Debug\net6.0\blockbusters.AssemblyInfo.cs
-C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Razor Pages\blockbusters\obj\Debug\net6.0\blockbusters.csproj.CoreCompileInputs.cache
-C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Razor Pages\blockbusters\obj\Debug\net6.0\blockbusters.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Razor Pages\blockbusters\obj\Debug\net6.0\blockbusters.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Razor Pages\blockbusters\obj\Debug\net6.0\blockbusters.RazorAssemblyInfo.cache
-C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Razor Pages\blockbusters\obj\Debug\net6.0\blockbusters.RazorAssemblyInfo.cs
