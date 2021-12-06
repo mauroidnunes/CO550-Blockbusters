@@ -10,11 +10,13 @@ namespace blockbusters.Models
 
         [Required]
         [DataType(DataType.DateTime)]
+        [Display(Name = "Review Date")]
         public DateTime ReviewDate { get; set; }
 
         [Required]
         [RegularExpression(@"^.{1,}$", ErrorMessage = "Minimum 1 character required")]
         [StringLength(255, ErrorMessage = "Maximum 255 characters exceeded")]
+        [Display(Name = "Review Text")]
         public string ReviewText { get; set; }
 
         public int Likes { get; set; } = 0;

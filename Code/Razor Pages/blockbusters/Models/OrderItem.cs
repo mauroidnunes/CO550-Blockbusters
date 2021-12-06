@@ -9,6 +9,7 @@ namespace blockbusters.Models
 
         [Required]
         [DataType(DataType.Currency)]
+        [Display(Name = "Sale Price")]
         public decimal SalePrice { get; set; }
 
         // NAVIGATION PROPERTIES

@@ -11,6 +11,7 @@ namespace blockbusters.Models
         public int OrderID { get; set; }
 
         [DataType(DataType.Date)]
+        [Display(Name = "Order Date")]
         public DateTime OrderDate { get; set; }
         public bool Completed { get; set; } = false;
 

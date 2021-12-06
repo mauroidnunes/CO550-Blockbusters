@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CO550-Teams\\BlockBusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj": {}
+    "C:\\Users\\Haroon\\Documents\\GitHub\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj": {}
   },
   "projects": {
-    "D:\\CO550-Teams\\BlockBusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj": {
+    "C:\\Users\\Haroon\\Documents\\GitHub\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CO550-Teams\\BlockBusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj",
+        "projectUniqueName": "C:\\Users\\Haroon\\Documents\\GitHub\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj",
         "projectName": "blockbusters",
-        "projectPath": "D:\\CO550-Teams\\BlockBusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj",
-        "packagesPath": "C:\\Users\\derek\\.nuget\\packages\\",
-        "outputPath": "D:\\CO550-Teams\\BlockBusters\\Code\\Razor Pages\\blockbusters\\obj\\",
+        "projectPath": "C:\\Users\\Haroon\\Documents\\GitHub\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj",
+        "packagesPath": "C:\\Users\\Haroon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Haroon\\Documents\\GitHub\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\derek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Haroon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

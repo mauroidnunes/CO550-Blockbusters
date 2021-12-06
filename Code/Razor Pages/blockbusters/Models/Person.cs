@@ -23,13 +23,16 @@ namespace blockbusters.Models
         [Required(ErrorMessage = "First Name is required")]
         [RegularExpression(@"^.{2,}$", ErrorMessage = "Minimum 2 characters required")]
         [StringLength(50, ErrorMessage = "Maximum 50 characters exceeded")]
+        [Display(Name ="First Name")]
         public string FirstName { get; set; }
 
         [Required(ErrorMessage = "Last Name is required")]
         [RegularExpression(@"^.{2,}$", ErrorMessage = "Minimum 2 characters required")]
         [StringLength(30, ErrorMessage = "Maximum 30 characters exceeded")]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
+        [Display(Name = "Staff Account")]
         public bool StaffAccount { get; set; } = false;
 
         // NAVIGATION PROPERTIES

@@ -23,18 +23,22 @@ namespace blockbusters.Models
 
         [Required(ErrorMessage = "Field is required")]
         [DataType(DataType.Date)]
+        [Display(Name = "Release Date")]
         public DateTime ReleaseDate { get; set; }
 
         [Required(ErrorMessage = "Field is required")]
         [RegularExpression(@"^.{2,}$", ErrorMessage = "Minimum 2 characters required")]
         [StringLength(50, ErrorMessage = "Maximum 50 characters exceeded")]
+        [Display(Name = "Leading Director")]
         public string LeadingDirector { get; set; }
 
         [Required(ErrorMessage = "Field is required")]
         [RegularExpression(@"^.{2,}$", ErrorMessage = "Minimum 2 characters required")]
         [StringLength(50, ErrorMessage = "Maximum 50 characters exceeded")]
+        [Display(Name ="Leading Producer")]
         public string LeadingProducer { get; set; }
 
+        [Display(Name = "Content Location")]
         public string ContentLocation { get; set; } = "/baseimagelocation/";
 
         [Required(ErrorMessage = "Field is required")]
