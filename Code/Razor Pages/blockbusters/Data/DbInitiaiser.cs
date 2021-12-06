@@ -10,6 +10,10 @@ namespace blockbusters.Data
         {
             AddPayments(context);
             AddPeople(context);
+            AddPeopleReviews(context);
+            AddMovies(context);
+            AddOrder(context);
+            AddOrderItems(context);
         }
 
         private static void AddPeople(ApplicationDbContext context)
@@ -40,7 +44,7 @@ namespace blockbusters.Data
 
         private static void AddPeopleReviews(ApplicationDbContext context)
         {
-            if (context.People.Any())
+            if (context.PeopleReviews.Any())
             {
                 return;   // DB has been seeded
             }
@@ -60,7 +64,7 @@ namespace blockbusters.Data
                 new PersonReview{ReviewDate=new DateTime(2019, 7, 5, 9, 11, 50), ReviewText="", Likes=0}
             };
 
-            //context.People.AddRange(peopleReviews);
+            context.PeopleReviews.AddRange(peopleReviews);
             // context.SaveChanges();
         }
 
@@ -91,7 +95,7 @@ namespace blockbusters.Data
 
         private static void AddOrder(ApplicationDbContext context)
         {
-            if (context.Order.Any())
+            if (context.Orders.Any())
             {
                 return;   // DB has been seeded
             }
@@ -111,18 +115,18 @@ namespace blockbusters.Data
                 new Order{OrderDate=new DateTime(2021, 4, 15, 23, 11, 1),Completed=false}
             };
 
-            context.Order.AddRange(orders);
+            context.Orders.AddRange(orders);
             // context.SaveChanges();
         }
 
-        private static void AddOrderItem(ApplicationDbContext context)
+        private static void AddOrderItems(ApplicationDbContext context)
         {
-            if (context.OrderItem.Any())
+            if (context.OrderItems.Any())
             {
                 return;   // DB has been seeded
             }
 
-            var ordersItems = new OrderItem[]
+            var orderItems = new OrderItem[]
             {
 
                 new OrderItem{SalePrice=12.99m},
@@ -137,13 +141,13 @@ namespace blockbusters.Data
                 new OrderItem{SalePrice=12.99m},
             };
 
-            //context.OrderItem.AddRange(orderItems);
+            context.OrderItems.AddRange(orderItems);
             // context.SaveChanges();
         }
 
-        private static void Movie(ApplicationDbContext context)
+        private static void AddMovies(ApplicationDbContext context)
         {
-            if (context.Movie.Any())
+            if (context.Movies.Any())
             {
                 return;   // DB has been seeded
             }
@@ -262,7 +266,7 @@ namespace blockbusters.Data
                 },
             };
 
-            //context.Movie.AddRange(movies);
+            context.Movies.AddRange(movies);
             // context.SaveChanges();
         }
     }

@@ -17,12 +17,12 @@ namespace blockbusters.Data
 
         public DbSet<Payment> Payments { get; set; }
 
-        public DbSet<Payment> Order { get; set; }
+        public DbSet<Payment> Orders { get; set; }
 
-        public DbSet<Movie> Movie { get; set; }
+        public DbSet<Movie> Movies { get; set; }
 
-        public DbSet<Movie> OrderItem { get; set; }
+        public DbSet<Movie> OrderItems { get; set; }
 
-        public DbSet<Person> PersonReview { get; set; }
+        public DbSet<Person> PeopleReviews { get; set; }
     }
 }
