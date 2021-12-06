@@ -15,7 +15,7 @@ namespace blockbusters.Models
 
         [Required(ErrorMessage = "Card Number is required")]
         [RegularExpression("^[0-9]*$", ErrorMessage = "Card Number must be numeric")]
-        [StringLength(16, ErrorMessage = "Card Number must be 16 digits", MinimumLength = 16)]
+        [StringLength(20, ErrorMessage = "Card Number must be 16 digits", MinimumLength = 16)]
         public string CardNumber { get; set; }
 
         [Required(ErrorMessage = "Expiration Date is required")]
