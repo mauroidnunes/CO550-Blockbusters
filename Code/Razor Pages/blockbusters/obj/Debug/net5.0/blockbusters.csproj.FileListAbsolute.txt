@@ -316,3 +316,8 @@ D:\CO550-Teams\BlockBusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\block
 D:\CO550-Teams\BlockBusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\ref\blockbusters.dll
 D:\CO550-Teams\BlockBusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\blockbusters.pdb
 D:\CO550-Teams\BlockBusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\blockbusters.genruntimeconfig.cache
+D:\CO550-Teams\BlockBusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Payments\Create.cshtml.g.cs
+D:\CO550-Teams\BlockBusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Payments\Delete.cshtml.g.cs
+D:\CO550-Teams\BlockBusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Payments\Details.cshtml.g.cs
+D:\CO550-Teams\BlockBusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Payments\Edit.cshtml.g.cs
+D:\CO550-Teams\BlockBusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Payments\Index.cshtml.g.cs

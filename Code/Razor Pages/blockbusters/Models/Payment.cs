@@ -11,6 +11,7 @@ namespace blockbusters.Models
         [Required(ErrorMessage = "Cardholder Name is required")]
         [RegularExpression(@"^.{2,}$", ErrorMessage = "Minimum 2 characters required")]
         [StringLength(20, ErrorMessage = "Maximum 26 characters exceeded")]
+        [Display(Name ="Card Holder")]
         public string CardholderName { get; set; }
 
         [Required(ErrorMessage = "Card Number is required")]

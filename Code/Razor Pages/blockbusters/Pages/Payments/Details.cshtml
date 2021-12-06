@@ -1,0 +1,43 @@
+﻿@page
+@model blockbusters.Pages.Payments.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Payment</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Payment.CardholderName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Payment.CardholderName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Payment.CardNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Payment.CardNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Payment.ExpirationDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Payment.ExpirationDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Payment.CCV)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Payment.CCV)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Payment.PaymentID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

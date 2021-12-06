@@ -1,0 +1,49 @@
+﻿@page
+@model blockbusters.Pages.Payments.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Payment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Payment.CardholderName" class="control-label"></label>
+                <input asp-for="Payment.CardholderName" class="form-control" />
+                <span asp-validation-for="Payment.CardholderName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Payment.CardNumber" class="control-label"></label>
+                <input asp-for="Payment.CardNumber" class="form-control" />
+                <span asp-validation-for="Payment.CardNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Payment.ExpirationDate" class="control-label"></label>
+                <input asp-for="Payment.ExpirationDate" class="form-control" />
+                <span asp-validation-for="Payment.ExpirationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Payment.CCV" class="control-label"></label>
+                <input asp-for="Payment.CCV" class="form-control" />
+                <span asp-validation-for="Payment.CCV" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
