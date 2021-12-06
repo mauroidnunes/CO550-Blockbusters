@@ -111,7 +111,7 @@ namespace blockbusters.Data
                 new Order{OrderDate=new DateTime(2021, 4, 15, 23, 11, 1),Completed=false}
             };
 
-            //context.Order.AddRange(orders);
+            context.Order.AddRange(orders);
             // context.SaveChanges();
         }
 
