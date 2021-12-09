@@ -26,20 +26,28 @@ namespace blockbusters.Data
             var people = new Person[]
             {
 
-                new Person{Email="bob14@email.com",FirstName="Bob",LastName = "Smith",StaffAccount=false},
-                new Person{Email="Ruairi412@email.com",FirstName="Ruairi",LastName="Hawes",StaffAccount=false},
-                new Person{Email="Millie635@email.com",FirstName="Millie",LastName="Storey",StaffAccount=false},
-                new Person{Email="Carys45@email.com",FirstName="Carys",LastName="Brock",StaffAccount=false},
-                new Person{Email="Priyanka4532@email.com",FirstName="Priyanka",LastName="Parkes",StaffAccount=true},
-                new Person{Email="Arnold3578@email.com",FirstName="Arnold",LastName="Carys",StaffAccount=false},
-                new Person{Email="Renesmae567@email.com",FirstName="Renesmae",LastName="Chen",StaffAccount=false},
-                new Person{Email="Joe9@email.com",FirstName="Joe",LastName="Byren",StaffAccount=true},
-                new Person{Email="Mark54@email.com",FirstName="Mark",LastName="Mil",StaffAccount=false},
-                new Person{Email="Korban234@email.com",FirstName="Korban",LastName="Melendez",StaffAccount=false}
+                new Person
+                {
+                    Email="bob14@email.com",
+                    FirstName="Bob",
+                    LastName = "Smith",
+                    StaffAccount=false,
+                    PaymentID = 1
+                },
+                new Person
+                {Email="Ruairi412@email.com",FirstName="Ruairi",LastName="Hawes",StaffAccount=false, PaymentID = 2},
+                new Person{Email="Millie635@email.com",FirstName="Millie",LastName="Storey",StaffAccount=false, PaymentID = 3},
+                new Person{Email="Carys45@email.com",FirstName="Carys",LastName="Brock",StaffAccount=false, PaymentID = 4},
+                new Person{Email="Priyanka4532@email.com",FirstName="Priyanka",LastName="Parkes",StaffAccount=true, PaymentID = 5},
+                new Person{Email="Arnold3578@email.com",FirstName="Arnold",LastName="Carys",StaffAccount=false, PaymentID = 6},
+                new Person{Email="Renesmae567@email.com",FirstName="Renesmae",LastName="Chen",StaffAccount=false, PaymentID = 7},
+                new Person{Email="Joe9@email.com",FirstName="Joe",LastName="Byren",StaffAccount=true, PaymentID = 8},
+                new Person{Email="Mark54@email.com",FirstName="Mark",LastName="Mil",StaffAccount=false, PaymentID = 9},
+                new Person{Email="Korban234@email.com",FirstName="Korban",LastName="Melendez",StaffAccount=false, PaymentID = 10}
             };
 
             context.People.AddRange(people);
-            // context.SaveChanges();
+            context.SaveChanges();
         }
 
         private static void AddPeopleReviews(ApplicationDbContext context)
@@ -90,7 +98,7 @@ namespace blockbusters.Data
             };
 
             context.Payments.AddRange(payments);
-            // context.SaveChanges();
+             context.SaveChanges();
         }
 
         private static void AddOrder(ApplicationDbContext context)
@@ -103,20 +111,20 @@ namespace blockbusters.Data
             var orders = new Order[]
             {
 
-                new Order{OrderDate=new DateTime(2020, 12, 4, 5, 12, 20),Completed=true},
-                new Order{OrderDate=new DateTime(2018, 8, 12, 8, 16, 43),Completed=false},
-                new Order{OrderDate=new DateTime(2016, 7, 22, 23, 20, 23),Completed=false},
-                new Order{OrderDate=new DateTime(2019, 8, 2, 1, 41, 44),Completed=true},
-                new Order{OrderDate=new DateTime(2019, 7, 5, 9, 11, 50),Completed=false},
-                new Order{OrderDate=new DateTime(2019, 4, 12, 18, 22, 21),Completed=false},
-                new Order{OrderDate=new DateTime(2021, 6, 7, 12, 43, 12),Completed=false},
-                new Order{OrderDate=new DateTime(2021, 3, 24, 19, 23, 45),Completed=true},
-                new Order{OrderDate=new DateTime(2021, 2, 18, 22, 45, 53),Completed=false},
-                new Order{OrderDate=new DateTime(2021, 4, 15, 23, 11, 1),Completed=false}
+                new Order{OrderDate=new DateTime(2020, 12, 4, 5, 12, 20),Completed=true, PersonID = 1}, 
+                new Order{OrderDate=new DateTime(2018, 8, 12, 8, 16, 43),Completed=false, PersonID = 1},
+                new Order{OrderDate=new DateTime(2016, 7, 22, 23, 20, 23),Completed=false, PersonID = 2},
+                new Order{OrderDate=new DateTime(2019, 8, 2, 1, 41, 44),Completed=true, PersonID = 3},
+                new Order{OrderDate=new DateTime(2019, 7, 5, 9, 11, 50),Completed=false, PersonID = 3},
+                new Order{OrderDate=new DateTime(2019, 4, 12, 18, 22, 21),Completed=false, PersonID = 4},
+                new Order{OrderDate=new DateTime(2021, 6, 7, 12, 43, 12),Completed=false, PersonID = 5},
+                new Order{OrderDate=new DateTime(2021, 3, 24, 19, 23, 45),Completed=true, PersonID = 6},
+                new Order{OrderDate=new DateTime(2021, 2, 18, 22, 45, 53),Completed=false, PersonID = 7},
+                new Order{OrderDate=new DateTime(2021, 4, 15, 23, 11, 1),Completed=false, PersonID = 8}
             };
 
             context.Orders.AddRange(orders);
-            // context.SaveChanges();
+            context.SaveChanges();
         }
 
         private static void AddOrderItems(ApplicationDbContext context)

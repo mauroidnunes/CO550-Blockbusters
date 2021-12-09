@@ -31,7 +31,7 @@ namespace blockbusters
                 {
                     var context = services.GetRequiredService<ApplicationDbContext>();
                     context.Database.EnsureCreated();
-                    // DbInitializer.Initialize(context);
+                    DbInitiaiser.Initialize(context);
                 }
                 catch (Exception ex)
                 {

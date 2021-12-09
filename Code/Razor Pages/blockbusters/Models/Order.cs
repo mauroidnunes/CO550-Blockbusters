@@ -10,6 +10,8 @@ namespace blockbusters.Models
         [Key]
         public int OrderID { get; set; }
 
+        public int PersonID { get; set; }
+
         [DataType(DataType.Date)]
         [Display(Name = "Order Date")]
         public DateTime OrderDate { get; set; }

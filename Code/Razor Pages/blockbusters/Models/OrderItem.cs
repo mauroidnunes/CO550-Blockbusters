@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace blockbusters.Models
 {
@@ -10,6 +11,7 @@ namespace blockbusters.Models
         [Required]
         [DataType(DataType.Currency)]
         [Display(Name = "Sale Price")]
+        [Column(TypeName = "money")]
         public decimal SalePrice { get; set; }
 
         // NAVIGATION PROPERTIES

@@ -46,7 +46,7 @@ namespace blockbusters.Models
         [Column(TypeName = "money")]
         public decimal Price { get; set; }
 
-        public decimal Rating { get; set; } = 0;
+        public double Rating { get; set; } = 0;
 
         //
         public Genre Genre { get; set; }
