@@ -164,110 +164,117 @@ namespace blockbusters.Data
             {
                 new Movie
                 {
-                    Title="",
-                    Description="",
-                    ReleaseDate=new DateTime(2021, 12, 31),
-                    LeadingDirector="",
-                    LeadingProducer="",
+                    Title="Interstellar",
+                    Description="A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+                    ReleaseDate=new DateTime(2014, 10, 29),
+                    LeadingDirector="Christopher Nolan",
+                    LeadingProducer="Christopher Nolan",
                     ContentLocation = "/baseimagelocation/",
                     Price=12.99m,
                     Rating = 0
                 },
                 new Movie
                 {
-                    Title="",
-                    Description="",
-                    ReleaseDate=new DateTime(2021, 12, 31),
-                    LeadingDirector="",
-                    LeadingProducer="",
+                    Title="Harry Potter and the Prisoner of Azkaban",
+                    Description="Harry Potter, Ron and Hermione return to Hogwarts School of Witchcraft and Wizardry for their third year of study, " +
+                    "where they delve into the mystery surrounding an escaped prisoner who poses a dangerous threat to the young wizard.",
+                    ReleaseDate=new DateTime(2004, 05, 31),
+                    LeadingDirector="Alfonso Cuarón",
+                    LeadingProducer="Chris Columbus",
                     ContentLocation = "/baseimagelocation/",
                     Price=12.99m,
                     Rating = 0
                 },
                 new Movie
                 {
-                    Title="",
-                    Description="",
-                    ReleaseDate=new DateTime(2021, 12, 31),
-                    LeadingDirector="",
-                    LeadingProducer="",
+                    Title="Khuda Kay Liye",
+                    Description="A drama about three stories centered on the effects of extremism and 9/11 on Pakistanis.",
+                    ReleaseDate=new DateTime(2007, 11, 02),
+                    LeadingDirector="Shoaib Mansoor",
+                    LeadingProducer="Shoaib Mansoor",
                     ContentLocation = "/baseimagelocation/",
                     Price=12.99m,
                     Rating = 0
                 },
                 new Movie
                 {
-                    Title="",
-                    Description="",
-                    ReleaseDate=new DateTime(2021, 12, 31),
-                    LeadingDirector="",
-                    LeadingProducer="",
+                    Title="Mah E Mir",
+                    Description="A modern poet Jamal who is against the traditional Urdu Poetry reads the biography of Mir Taqi Mir, " +
+                    "one of the greatest poets of the 18th century. And sees Mir's reflection on his personality.",
+                    ReleaseDate=new DateTime(2016, 05, 06),
+                    LeadingDirector="Anjum Shahzad",
+                    LeadingProducer="Badar Ikram",
                     ContentLocation = "/baseimagelocation/",
                     Price=12.99m,
                     Rating = 0
                 },
                 new Movie
                 {
-                    Title="",
-                    Description="",
-                    ReleaseDate=new DateTime(2021, 12, 31),
-                    LeadingDirector="",
-                    LeadingProducer="",
+                    Title="Howl's Moving Castle",
+                    Description="When an unconfident young woman is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure" +
+                    " young wizard and his companions in his legged, walking castle.",
+                    ReleaseDate=new DateTime(2005, 09, 23),
+                    LeadingDirector="Hayao Miyazaki",
+                    LeadingProducer="Rick Dempsey",
                     ContentLocation = "/baseimagelocation/",
                     Price=12.99m,
                     Rating = 0
                 },
                 new Movie
                 {
-                    Title="",
-                    Description="",
-                    ReleaseDate=new DateTime(2021, 12, 31),
-                    LeadingDirector="",
-                    LeadingProducer="",
+                    Title="Avengers: Endgame",
+                    Description="After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies," +
+                    " the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+                    ReleaseDate=new DateTime(2019, 04, 25),
+                    LeadingDirector="Anthony Russo",
+                    LeadingProducer="Victoria Alonso",
                     ContentLocation = "/baseimagelocation/",
                     Price=12.99m,
                     Rating = 0
                 },
                 new Movie
                 {
-                    Title="",
-                    Description="",
-                    ReleaseDate=new DateTime(2021, 12, 31),
-                    LeadingDirector="",
-                    LeadingProducer="",
+                    Title="Pulp Fiction",
+                    Description="The lives of two mob hitmen, a boxer," +
+                    " a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+                    ReleaseDate=new DateTime(1994, 10, 21),
+                    LeadingDirector="Quentin Tarantino",
+                    LeadingProducer="Lawrence Bender",
                     ContentLocation = "/baseimagelocation/",
                     Price=12.99m,
                     Rating = 0
                 },
                 new Movie
                 {
-                    Title="",
-                    Description="",
-                    ReleaseDate=new DateTime(2021, 12, 31),
-                    LeadingDirector="",
-                    LeadingProducer="",
+                    Title="Love, Actually",
+                    Description="Follows the lives of eight very different couples in dealing with their love lives in various" +
+                    " loosely interrelated tales all set during a frantic month before Christmas in London, England.",
+                    ReleaseDate=new DateTime(2003, 11, 16),
+                    LeadingDirector="Richard Curtis",
+                    LeadingProducer="Tim Bevan",
                     ContentLocation = "/baseimagelocation/",
                     Price=12.99m,
                     Rating = 0
                 },
                 new Movie
                 {
-                    Title="",
-                    Description="",
-                    ReleaseDate=new DateTime(2021, 12, 31),
-                    LeadingDirector="",
-                    LeadingProducer="",
+                    Title="Uncut Gems",
+                    Description="With his debts mounting and angry collectors closing in," +
+                    " a fast-talking New York City jeweler risks everything in hope of staying afloat and alive.",
+                    ReleaseDate=new DateTime(2019, 10, 09),
+                    LeadingDirector="Benny Safdie",
+                    LeadingProducer="Michael Bartol",
                     ContentLocation = "/baseimagelocation/",
                     Price=12.99m,
                     Rating = 0
                 },
                 new Movie
                 {
-                    Title="",
-                    Description="",
-                    ReleaseDate=new DateTime(2021, 12, 31),
-                    LeadingDirector="",
-                    LeadingProducer="",
+                    Title="Insidious",
+                    Description="A family looks to prevent evil spirits from trapping their comatose child in a realm called The Further.",
+                    ReleaseDate=new DateTime(2011, 04, 29),
+                    LeadingDirector="James Wan",
+                    LeadingProducer="Jason Blum",
                     ContentLocation = "/baseimagelocation/",
                     Price=12.99m,
                     Rating = 0

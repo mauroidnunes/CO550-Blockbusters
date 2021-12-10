@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\munir\\OneDrive - Buckinghamshire New University\\Documents\\BLOCKBUSTER\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj": {}
+    "C:\\Users\\Mauro\\Desktop\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj": {}
   },
   "projects": {
-    "C:\\Users\\munir\\OneDrive - Buckinghamshire New University\\Documents\\BLOCKBUSTER\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj": {
+    "C:\\Users\\Mauro\\Desktop\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\munir\\OneDrive - Buckinghamshire New University\\Documents\\BLOCKBUSTER\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj",
+        "projectUniqueName": "C:\\Users\\Mauro\\Desktop\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj",
         "projectName": "blockbusters",
-        "projectPath": "C:\\Users\\munir\\OneDrive - Buckinghamshire New University\\Documents\\BLOCKBUSTER\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj",
-        "packagesPath": "C:\\Users\\munir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\munir\\OneDrive - Buckinghamshire New University\\Documents\\BLOCKBUSTER\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\obj\\",
+        "projectPath": "C:\\Users\\Mauro\\Desktop\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj",
+        "packagesPath": "C:\\Users\\Mauro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mauro\\Desktop\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\munir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mauro\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
