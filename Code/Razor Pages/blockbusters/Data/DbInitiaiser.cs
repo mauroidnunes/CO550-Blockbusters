@@ -14,6 +14,7 @@ namespace blockbusters.Data
             AddMovies(context);
             AddOrder(context);
             AddOrderItems(context);
+            AddPeopleGenres(context);
         }
 
         private static void AddPeople(ApplicationDbContext context)
@@ -26,16 +27,8 @@ namespace blockbusters.Data
             var people = new Person[]
             {
 
-                new Person
-                {
-                    Email="bob14@email.com",
-                    FirstName="Bob",
-                    LastName = "Smith",
-                    StaffAccount=false,
-                    PaymentID = 1
-                },
-                new Person
-                {Email="Ruairi412@email.com",FirstName="Ruairi",LastName="Hawes",StaffAccount=false, PaymentID = 2},
+                new Person{Email="bob14@email.com",FirstName="Bob",LastName = "Smith",StaffAccount=false,PaymentID = 1},
+                new Person{Email="Ruairi412@email.com",FirstName="Ruairi",LastName="Hawes",StaffAccount=false, PaymentID = 2},
                 new Person{Email="Millie635@email.com",FirstName="Millie",LastName="Storey",StaffAccount=false, PaymentID = 3},
                 new Person{Email="Carys45@email.com",FirstName="Carys",LastName="Brock",StaffAccount=false, PaymentID = 4},
                 new Person{Email="Priyanka4532@email.com",FirstName="Priyanka",LastName="Parkes",StaffAccount=true, PaymentID = 5},
@@ -60,20 +53,20 @@ namespace blockbusters.Data
             var peopleReviews = new PersonReview[]
             {
 
-                new PersonReview{ReviewDate=new DateTime(2021, 6, 7, 12, 43, 12), ReviewText="", Likes=0},
-                new PersonReview{ReviewDate=new DateTime(2021, 3, 24, 19, 23, 45), ReviewText="", Likes=0},
-                new PersonReview{ReviewDate=new DateTime(2016, 7, 22, 23, 20, 23), ReviewText="", Likes=0},
-                new PersonReview{ReviewDate=new DateTime(2021, 2, 18, 22, 45, 53), ReviewText="", Likes=0},
-                new PersonReview{ReviewDate=new DateTime(2021, 4, 15, 23, 11, 1), ReviewText="", Likes=0},
-                new PersonReview{ReviewDate=new DateTime(2018, 8, 12, 8, 16, 43), ReviewText="", Likes=0},
-                new PersonReview{ReviewDate=new DateTime(2020, 12, 4, 5, 12, 20), ReviewText="", Likes=0},
-                new PersonReview{ReviewDate=new DateTime(2019, 8, 2, 1, 41, 44),ReviewText="", Likes=0},
-                new PersonReview{ReviewDate=new DateTime(2019, 4, 12, 18, 22, 21), ReviewText="", Likes=0},
-                new PersonReview{ReviewDate=new DateTime(2019, 7, 5, 9, 11, 50), ReviewText="", Likes=0}
+                new PersonReview{ReviewDate=new DateTime(2021, 6, 7, 12, 43, 12), ReviewText="Great!", Likes=8, MovieID = 1, PersonID = 10},
+                new PersonReview{ReviewDate=new DateTime(2021, 3, 24, 19, 23, 45), ReviewText="Nice!", Likes=5, MovieID = 2, PersonID = 9},
+                new PersonReview{ReviewDate=new DateTime(2016, 7, 22, 23, 20, 23), ReviewText="Wow", Likes=40, MovieID = 3, PersonID = 6},
+                new PersonReview{ReviewDate=new DateTime(2021, 2, 18, 22, 45, 53), ReviewText="WHAT", Likes=320, MovieID = 4, PersonID = 8},
+                new PersonReview{ReviewDate=new DateTime(2021, 4, 15, 23, 11, 1), ReviewText="Amazing", Likes=5, MovieID = 5, PersonID = 7},
+                new PersonReview{ReviewDate=new DateTime(2018, 8, 12, 8, 16, 43), ReviewText="did not like", Likes=-4, MovieID = 6, PersonID = 5},
+                new PersonReview{ReviewDate=new DateTime(2020, 12, 4, 5, 12, 20), ReviewText="no way", Likes=3, MovieID = 7, PersonID = 3},
+                new PersonReview{ReviewDate=new DateTime(2019, 8, 2, 1, 41, 44),ReviewText="woah", Likes=-24, MovieID = 8, PersonID = 2},
+                new PersonReview{ReviewDate=new DateTime(2019, 4, 12, 18, 22, 21), ReviewText="that was crazy", Likes=-20, MovieID = 9, PersonID = 4},
+                new PersonReview{ReviewDate=new DateTime(2019, 7, 5, 9, 11, 50), ReviewText="great movie", Likes=1, MovieID = 10, PersonID = 1}
             };
 
             context.PeopleReviews.AddRange(peopleReviews);
-            // context.SaveChanges();
+            context.SaveChanges();
         }
 
         private static void AddPayments(ApplicationDbContext context)
@@ -98,7 +91,7 @@ namespace blockbusters.Data
             };
 
             context.Payments.AddRange(payments);
-             context.SaveChanges();
+            context.SaveChanges();
         }
 
         private static void AddOrder(ApplicationDbContext context)
@@ -111,7 +104,7 @@ namespace blockbusters.Data
             var orders = new Order[]
             {
 
-                new Order{OrderDate=new DateTime(2020, 12, 4, 5, 12, 20),Completed=true, PersonID = 1}, 
+                new Order{OrderDate=new DateTime(2020, 12, 4, 5, 12, 20),Completed=true, PersonID = 10}, 
                 new Order{OrderDate=new DateTime(2018, 8, 12, 8, 16, 43),Completed=false, PersonID = 1},
                 new Order{OrderDate=new DateTime(2016, 7, 22, 23, 20, 23),Completed=false, PersonID = 2},
                 new Order{OrderDate=new DateTime(2019, 8, 2, 1, 41, 44),Completed=true, PersonID = 3},
@@ -120,7 +113,9 @@ namespace blockbusters.Data
                 new Order{OrderDate=new DateTime(2021, 6, 7, 12, 43, 12),Completed=false, PersonID = 5},
                 new Order{OrderDate=new DateTime(2021, 3, 24, 19, 23, 45),Completed=true, PersonID = 6},
                 new Order{OrderDate=new DateTime(2021, 2, 18, 22, 45, 53),Completed=false, PersonID = 7},
-                new Order{OrderDate=new DateTime(2021, 4, 15, 23, 11, 1),Completed=false, PersonID = 8}
+                new Order{OrderDate=new DateTime(2021, 4, 15, 23, 11, 1),Completed=false, PersonID = 8},
+                new Order{OrderDate=new DateTime(2021, 4, 15, 14, 12, 4),Completed=false, PersonID = 9}
+
             };
 
             context.Orders.AddRange(orders);
@@ -137,20 +132,44 @@ namespace blockbusters.Data
             var orderItems = new OrderItem[]
             {
 
-                new OrderItem{SalePrice=12.99m},
-                new OrderItem{SalePrice=12.99m},
-                new OrderItem{SalePrice=12.99m},
-                new OrderItem{SalePrice=12.99m},
-                new OrderItem{SalePrice=12.99m},
-                new OrderItem{SalePrice=12.99m},
-                new OrderItem{SalePrice=12.99m},
-                new OrderItem{SalePrice=12.99m},
-                new OrderItem{SalePrice=12.99m},
-                new OrderItem{SalePrice=12.99m},
+                new OrderItem{SalePrice=12.99m, MovieID = 1, OrderID = 1},
+                new OrderItem{SalePrice=5.99m, MovieID = 2, OrderID = 2},
+                new OrderItem{SalePrice=7.99m, MovieID = 3, OrderID = 3},
+                new OrderItem{SalePrice=15.99m, MovieID = 4, OrderID = 4},
+                new OrderItem{SalePrice=1.99m, MovieID = 5, OrderID = 5},
+                new OrderItem{SalePrice=5.99m, MovieID = 6, OrderID = 6},
+                new OrderItem{SalePrice=8.99m, MovieID = 7, OrderID = 7},
+                new OrderItem{SalePrice=9.99m, MovieID = 8, OrderID = 8},
+                new OrderItem{SalePrice=14.99m, MovieID = 9, OrderID = 9},
+                new OrderItem{SalePrice=23.99m, MovieID = 0, OrderID = 10}
             };
 
             context.OrderItems.AddRange(orderItems);
-            // context.SaveChanges();
+            context.SaveChanges();
+        }
+
+        private static void AddPeopleGenres(ApplicationDbContext context)
+        {
+            if (context.PeopleGenres.Any())
+            {
+                return;   // DB has been seeded
+            }
+
+            var peopleGenres = new PersonGenre[]
+            {
+                new PersonGenre{PersonID = 0, GenreID = 10},
+                new PersonGenre{PersonID = 1, GenreID = 1},
+                new PersonGenre{PersonID = 2, GenreID = 2},
+                new PersonGenre{PersonID = 3, GenreID = 3},
+                new PersonGenre{PersonID = 4, GenreID = 4},
+                new PersonGenre{PersonID = 5, GenreID = 5},
+                new PersonGenre{PersonID = 6, GenreID = 6},
+                new PersonGenre{PersonID = 7, GenreID = 7},
+                new PersonGenre{PersonID = 8, GenreID = 8},
+                new PersonGenre{PersonID = 9, GenreID = 9}
+            };
+            context.PeopleGenres.AddRange(peopleGenres);
+            context.SaveChanges();
         }
 
         private static void AddMovies(ApplicationDbContext context)
@@ -182,7 +201,7 @@ namespace blockbusters.Data
                     LeadingDirector="Alfonso Cuarón",
                     LeadingProducer="Chris Columbus",
                     ContentLocation = "/baseimagelocation/",
-                    Price=12.99m,
+                    Price=10.99m,
                     Rating = 0
                 },
                 new Movie
@@ -193,7 +212,7 @@ namespace blockbusters.Data
                     LeadingDirector="Shoaib Mansoor",
                     LeadingProducer="Shoaib Mansoor",
                     ContentLocation = "/baseimagelocation/",
-                    Price=12.99m,
+                    Price=9.99m,
                     Rating = 0
                 },
                 new Movie
@@ -205,7 +224,7 @@ namespace blockbusters.Data
                     LeadingDirector="Anjum Shahzad",
                     LeadingProducer="Badar Ikram",
                     ContentLocation = "/baseimagelocation/",
-                    Price=12.99m,
+                    Price=2.99m,
                     Rating = 0
                 },
                 new Movie
@@ -217,7 +236,7 @@ namespace blockbusters.Data
                     LeadingDirector="Hayao Miyazaki",
                     LeadingProducer="Rick Dempsey",
                     ContentLocation = "/baseimagelocation/",
-                    Price=12.99m,
+                    Price=5.99m,
                     Rating = 0
                 },
                 new Movie
@@ -229,7 +248,7 @@ namespace blockbusters.Data
                     LeadingDirector="Anthony Russo",
                     LeadingProducer="Victoria Alonso",
                     ContentLocation = "/baseimagelocation/",
-                    Price=12.99m,
+                    Price=6.99m,
                     Rating = 0
                 },
                 new Movie
@@ -241,7 +260,7 @@ namespace blockbusters.Data
                     LeadingDirector="Quentin Tarantino",
                     LeadingProducer="Lawrence Bender",
                     ContentLocation = "/baseimagelocation/",
-                    Price=12.99m,
+                    Price=8.99m,
                     Rating = 0
                 },
                 new Movie
@@ -253,7 +272,7 @@ namespace blockbusters.Data
                     LeadingDirector="Richard Curtis",
                     LeadingProducer="Tim Bevan",
                     ContentLocation = "/baseimagelocation/",
-                    Price=12.99m,
+                    Price=9.99m,
                     Rating = 0
                 },
                 new Movie
@@ -265,7 +284,7 @@ namespace blockbusters.Data
                     LeadingDirector="Benny Safdie",
                     LeadingProducer="Michael Bartol",
                     ContentLocation = "/baseimagelocation/",
-                    Price=12.99m,
+                    Price=40.99m,
                     Rating = 0
                 },
                 new Movie
@@ -276,13 +295,13 @@ namespace blockbusters.Data
                     LeadingDirector="James Wan",
                     LeadingProducer="Jason Blum",
                     ContentLocation = "/baseimagelocation/",
-                    Price=12.99m,
+                    Price=20.99m,
                     Rating = 0
                 },
             };
 
             context.Movies.AddRange(movies);
-            // context.SaveChanges();
+            context.SaveChanges();
         }
     }
 }

@@ -8,6 +8,10 @@ namespace blockbusters.Models
         [Key]
         public int OrderItemID { get; set; }
 
+        public int OrderID { get; set; }
+
+        public int MovieID { get; set; }
+
         [Required]
         [DataType(DataType.Currency)]
         [Display(Name = "Sale Price")]

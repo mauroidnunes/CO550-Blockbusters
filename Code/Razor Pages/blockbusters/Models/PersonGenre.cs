@@ -6,6 +6,11 @@ namespace blockbusters.Models
     {
         [Key]
         public int PersonGenreID { get; set; }
+
+        public int PersonID { get; set; }
+
+        public int GenreID { get; set; }
+
         // NAVIGATION PROPERTIES
         public Genre Genre { get; set; }
 

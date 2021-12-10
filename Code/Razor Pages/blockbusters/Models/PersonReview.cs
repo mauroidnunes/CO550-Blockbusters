@@ -8,6 +8,10 @@ namespace blockbusters.Models
         [Key]
         public int PersonReviewID { get; set; }
 
+        public int MovieID { get; set; }
+
+        public int PersonID { get; set; }
+
         [Required]
         [DataType(DataType.DateTime)]
         [Display(Name = "Review Date")]

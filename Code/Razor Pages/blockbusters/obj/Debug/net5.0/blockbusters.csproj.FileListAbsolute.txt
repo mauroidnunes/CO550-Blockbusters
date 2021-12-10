@@ -977,3 +977,8 @@ C:\Users\Mauro\Desktop\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debu
 C:\Users\Mauro\Desktop\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\ref\blockbusters.dll
 C:\Users\Mauro\Desktop\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\blockbusters.pdb
 C:\Users\Mauro\Desktop\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\blockbusters.genruntimeconfig.cache
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Movies\Create.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Movies\Delete.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Movies\Details.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Movies\Edit.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Movies\Index.cshtml.g.cs

@@ -24,5 +24,7 @@ namespace blockbusters.Data
         public DbSet<OrderItem> OrderItems { get; set; }
 
         public DbSet<PersonReview> PeopleReviews { get; set; }
+
+        public DbSet<PersonReview> PeopleGenres { get; set; }
     }
 }
