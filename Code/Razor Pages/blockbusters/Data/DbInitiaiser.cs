@@ -56,7 +56,7 @@ namespace blockbusters.Data
                 new PersonReview{ReviewDate=new DateTime(2021, 6, 7, 12, 43, 12), ReviewText="Great!", Likes=8, MovieID = 1, PersonID = 10},
                 new PersonReview{ReviewDate=new DateTime(2021, 3, 24, 19, 23, 45), ReviewText="Nice!", Likes=5, MovieID = 2, PersonID = 9},
                 new PersonReview{ReviewDate=new DateTime(2016, 7, 22, 23, 20, 23), ReviewText="Wow", Likes=40, MovieID = 3, PersonID = 6},
-                new PersonReview{ReviewDate=new DateTime(2021, 2, 18, 22, 45, 53), ReviewText="WHAT", Likes=320, MovieID = 4, PersonID = 8},
+                new PersonReview{ReviewDate=new DateTime(2021, 2, 18, 22, 45, 53), ReviewText="WHAT", Likes=320, MovieID = 4, PersonID = 6},
                 new PersonReview{ReviewDate=new DateTime(2021, 4, 15, 23, 11, 1), ReviewText="Amazing", Likes=5, MovieID = 5, PersonID = 7},
                 new PersonReview{ReviewDate=new DateTime(2018, 8, 12, 8, 16, 43), ReviewText="did not like", Likes=-4, MovieID = 6, PersonID = 5},
                 new PersonReview{ReviewDate=new DateTime(2020, 12, 4, 5, 12, 20), ReviewText="no way", Likes=3, MovieID = 7, PersonID = 3},

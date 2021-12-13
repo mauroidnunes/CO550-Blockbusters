@@ -18,7 +18,7 @@ namespace blockbusters.Models
         public DateTime ReviewDate { get; set; }
 
         [Required]
-        [RegularExpression(@"^.{1,}$", ErrorMessage = "Minimum 1 character required")]
+        //[RegularExpression(@"^.{1,}$", ErrorMessage = "Minimum 1 character required")]
         [StringLength(255, ErrorMessage = "Maximum 255 characters exceeded")]
         [Display(Name = "Review Text")]
         public string ReviewText { get; set; }
