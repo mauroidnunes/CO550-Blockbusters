@@ -981,3 +981,4 @@ C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbuster
 C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Movies\Details.cshtml.g.cs
 C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Movies\Edit.cshtml.g.cs
 C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Movies\Index.cshtml.g.cs
+C:\Users\munir\OneDrive - Buckinghamshire New University\Documents\BLOCKBUSTER\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\blockbusters.csprojAssemblyReference.cache

@@ -11,12 +11,12 @@ namespace blockbusters.Models
         public int MovieID { get; set; }
 
         [Required(ErrorMessage = "Field is required")]
-        [RegularExpression(@"^.{2,}$", ErrorMessage = "Minimum 2 characters required")]
+        //[RegularExpression(@"^.{2,}$", ErrorMessage = "Minimum 2 characters required")]
         [StringLength(255, ErrorMessage = "Maximum 255 characters exceeded")]
         public string Title { get; set; }
 
         [Required(ErrorMessage = "Field is required")]
-        [RegularExpression(@"^.{8,}$", ErrorMessage = "Minimum 8 characters required")]
+        //[RegularExpression(@"^.{8,}$", ErrorMessage = "Minimum 8 characters required")]
         [StringLength(1025, ErrorMessage = "Maximum 1025 characters exceeded")]
         [DataType(DataType.MultilineText)]
         public string Description { get; set; }
@@ -27,13 +27,13 @@ namespace blockbusters.Models
         public DateTime ReleaseDate { get; set; }
 
         [Required(ErrorMessage = "Field is required")]
-        [RegularExpression(@"^.{2,}$", ErrorMessage = "Minimum 2 characters required")]
+        //[RegularExpression(@"^.{2,}$", ErrorMessage = "Minimum 2 characters required")]
         [StringLength(50, ErrorMessage = "Maximum 50 characters exceeded")]
         [Display(Name = "Leading Director")]
         public string LeadingDirector { get; set; }
 
         [Required(ErrorMessage = "Field is required")]
-        [RegularExpression(@"^.{2,}$", ErrorMessage = "Minimum 2 characters required")]
+        //[RegularExpression(@"^.{2,}$", ErrorMessage = "Minimum 2 characters required")]
         [StringLength(50, ErrorMessage = "Maximum 50 characters exceeded")]
         [Display(Name ="Leading Producer")]
         public string LeadingProducer { get; set; }

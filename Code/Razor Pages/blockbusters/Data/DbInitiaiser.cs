@@ -10,11 +10,11 @@ namespace blockbusters.Data
         {
             AddPayments(context);
             AddPeople(context);
-            AddPeopleReviews(context);
             AddMovies(context);
             AddOrder(context);
             AddOrderItems(context);
             AddPeopleGenres(context);
+            AddPeopleReviews(context);
         }
 
         private static void AddPeople(ApplicationDbContext context)
@@ -133,15 +133,15 @@ namespace blockbusters.Data
             {
 
                 new OrderItem{SalePrice=12.99m, MovieID = 1, OrderID = 1},
-                new OrderItem{SalePrice=5.99m, MovieID = 2, OrderID = 2},
+                new OrderItem{SalePrice=5.99m, MovieID = 2, OrderID = 1},
                 new OrderItem{SalePrice=7.99m, MovieID = 3, OrderID = 3},
                 new OrderItem{SalePrice=15.99m, MovieID = 4, OrderID = 4},
-                new OrderItem{SalePrice=1.99m, MovieID = 5, OrderID = 5},
+                new OrderItem{SalePrice=1.99m, MovieID = 5, OrderID = 4},
                 new OrderItem{SalePrice=5.99m, MovieID = 6, OrderID = 6},
-                new OrderItem{SalePrice=8.99m, MovieID = 7, OrderID = 7},
+                new OrderItem{SalePrice=8.99m, MovieID = 6, OrderID = 7},
                 new OrderItem{SalePrice=9.99m, MovieID = 8, OrderID = 8},
                 new OrderItem{SalePrice=14.99m, MovieID = 9, OrderID = 9},
-                new OrderItem{SalePrice=23.99m, MovieID = 0, OrderID = 10}
+                new OrderItem{SalePrice=23.99m, MovieID = 10, OrderID = 10}
             };
 
             context.OrderItems.AddRange(orderItems);
@@ -157,7 +157,7 @@ namespace blockbusters.Data
 
             var peopleGenres = new PersonGenre[]
             {
-                new PersonGenre{PersonID = 0, GenreID = 10},
+                new PersonGenre{PersonID = 1, GenreID = 10},
                 new PersonGenre{PersonID = 1, GenreID = 1},
                 new PersonGenre{PersonID = 2, GenreID = 2},
                 new PersonGenre{PersonID = 3, GenreID = 3},
@@ -166,7 +166,7 @@ namespace blockbusters.Data
                 new PersonGenre{PersonID = 6, GenreID = 6},
                 new PersonGenre{PersonID = 7, GenreID = 7},
                 new PersonGenre{PersonID = 8, GenreID = 8},
-                new PersonGenre{PersonID = 9, GenreID = 9}
+                new PersonGenre{PersonID = 9, GenreID = 8}
             };
             context.PeopleGenres.AddRange(peopleGenres);
             context.SaveChanges();
