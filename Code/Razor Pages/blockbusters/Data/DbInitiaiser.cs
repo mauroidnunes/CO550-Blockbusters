@@ -157,16 +157,16 @@ namespace blockbusters.Data
 
             var peopleGenres = new PersonGenre[]
             {
-                new PersonGenre{PersonID = 1, GenreID = 10},
-                new PersonGenre{PersonID = 1, GenreID = 1},
-                new PersonGenre{PersonID = 2, GenreID = 2},
-                new PersonGenre{PersonID = 3, GenreID = 3},
-                new PersonGenre{PersonID = 4, GenreID = 4},
-                new PersonGenre{PersonID = 5, GenreID = 5},
-                new PersonGenre{PersonID = 6, GenreID = 6},
-                new PersonGenre{PersonID = 7, GenreID = 7},
-                new PersonGenre{PersonID = 8, GenreID = 8},
-                new PersonGenre{PersonID = 9, GenreID = 8}
+                new PersonGenre{PersonID = 1, GenreID = Genre.Action},
+                new PersonGenre{PersonID = 1, GenreID = Genre.Comedy},
+                new PersonGenre{PersonID = 2, GenreID = Genre.Action},
+                new PersonGenre{PersonID = 3, GenreID = Genre.SciFi},
+                new PersonGenre{PersonID = 4, GenreID = Genre.Satire},
+                new PersonGenre{PersonID = 5, GenreID = Genre.Romance},
+                new PersonGenre{PersonID = 6, GenreID = Genre.SciFi},
+                new PersonGenre{PersonID = 7, GenreID = Genre.Mystery},
+                new PersonGenre{PersonID = 8, GenreID = Genre.Thriller},
+                new PersonGenre{PersonID = 9, GenreID = Genre.Western}
             };
             context.PeopleGenres.AddRange(peopleGenres);
             context.SaveChanges();
