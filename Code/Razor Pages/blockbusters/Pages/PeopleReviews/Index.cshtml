@@ -1,0 +1,60 @@
+﻿@page
+@model blockbusters.Pages.PeopleReviews.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonReview[0].ReviewDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonReview[0].ReviewText)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonReview[0].Likes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonReview[0].Movie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonReview[0].Person)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.PersonReview) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReviewDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReviewText)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Likes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Movie.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Person.Email)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.PersonReviewID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.PersonReviewID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.PersonReviewID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,45 @@
+﻿@page
+@model blockbusters.Pages.OrderItems.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>OrderItem</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="OrderItem.OrderItemID" />
+            <div class="form-group">
+                <label asp-for="OrderItem.OrderID" class="control-label"></label>
+                <select asp-for="OrderItem.OrderID" class="form-control" asp-items="ViewBag.OrderID"></select>
+                <span asp-validation-for="OrderItem.OrderID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderItem.MovieID" class="control-label"></label>
+                <select asp-for="OrderItem.MovieID" class="form-control" asp-items="ViewBag.MovieID"></select>
+                <span asp-validation-for="OrderItem.MovieID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderItem.SalePrice" class="control-label"></label>
+                <input asp-for="OrderItem.SalePrice" class="form-control" />
+                <span asp-validation-for="OrderItem.SalePrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
