@@ -279,7 +279,7 @@ namespace blockbusters.Data.Migrations
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("PersonID")
+                    b.Property<int>("PersonID")
                         .HasColumnType("int");
 
                     b.HasKey("OrderID");
@@ -296,10 +296,10 @@ namespace blockbusters.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("MovieID")
+                    b.Property<int>("MovieID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("OrderID")
+                    b.Property<int>("OrderID")
                         .HasColumnType("int");
 
                     b.Property<decimal>("SalePrice")
@@ -388,17 +388,17 @@ namespace blockbusters.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Genre")
+                    b.Property<int>("GenreID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PersonID")
+                    b.Property<int>("PersonID")
                         .HasColumnType("int");
 
                     b.HasKey("PersonGenreID");
 
                     b.HasIndex("PersonID");
 
-                    b.ToTable("PersonGenre");
+                    b.ToTable("PeopleGenres");
                 });
 
             modelBuilder.Entity("blockbusters.Models.PersonReview", b =>
@@ -411,10 +411,10 @@ namespace blockbusters.Data.Migrations
                     b.Property<int>("Likes")
                         .HasColumnType("int");
 
-                    b.Property<int?>("MovieID")
+                    b.Property<int>("MovieID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PersonID")
+                    b.Property<int>("PersonID")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("ReviewDate")
@@ -489,7 +489,9 @@ namespace blockbusters.Data.Migrations
                 {
                     b.HasOne("blockbusters.Models.Person", "Person")
                         .WithMany("Order")
-                        .HasForeignKey("PersonID");
+                        .HasForeignKey("PersonID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Person");
                 });
@@ -498,11 +500,15 @@ namespace blockbusters.Data.Migrations
                 {
                     b.HasOne("blockbusters.Models.Movie", "Movie")
                         .WithMany("OrderItem")
-                        .HasForeignKey("MovieID");
+                        .HasForeignKey("MovieID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("blockbusters.Models.Order", "Order")
                         .WithMany("OrderItem")
-                        .HasForeignKey("OrderID");
+                        .HasForeignKey("OrderID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Movie");
 
@@ -524,7 +530,9 @@ namespace blockbusters.Data.Migrations
                 {
                     b.HasOne("blockbusters.Models.Person", "Person")
                         .WithMany("PersonGenres")
-                        .HasForeignKey("PersonID");
+                        .HasForeignKey("PersonID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Person");
                 });
@@ -533,11 +541,15 @@ namespace blockbusters.Data.Migrations
                 {
                     b.HasOne("blockbusters.Models.Movie", "Movie")
                         .WithMany("PersonReview")
-                        .HasForeignKey("MovieID");
+                        .HasForeignKey("MovieID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("blockbusters.Models.Person", "Person")
                         .WithMany("PersonReviews")
-                        .HasForeignKey("PersonID");
+                        .HasForeignKey("PersonID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Movie");
 

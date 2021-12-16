@@ -9,11 +9,9 @@ namespace blockbusters.Models
 
         public int PersonID { get; set; }
 
-        public int GenreID { get; set; }
+        public virtual Genre GenreID { get; set; }
 
         // NAVIGATION PROPERTIES
-        public Genre Genre { get; set; }
-
 
         public virtual Person Person { get; set; }
     }

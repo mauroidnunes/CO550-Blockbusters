@@ -1,0 +1,42 @@
+﻿@page
+@model blockbusters.Pages.PeopleGenres.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonGenre[0].GenreID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PersonGenre[0].Person)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.PersonGenre) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.GenreID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Person.Email)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.PersonGenreID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.PersonGenreID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.PersonGenreID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
