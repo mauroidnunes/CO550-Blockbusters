@@ -1,0 +1,36 @@
+﻿@page
+@model blockbusters.Pages.ExploreModel
+@{
+    int colNo = 0;
+}
+
+<header class="jumbotron">
+    <h1>BlockBuster Movies</h1>
+</header>
+
+<section>        
+    <div class="row">
+        @foreach (var item in Model.Movie) 
+        {
+            if (colNo > 0 && colNo % 3 == 0)
+            {
+                @:</div><div class="row">
+            }
+        
+            <div class="col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Title</h5>
+                        <img src="/wwwroot/images/@item.ContentLocation" width="200"/>
+
+                        <p class="card-text">@item.Description</p>
+                        <a href="#" class="btn btn-primary">View Movie</a>
+                    </div>
+                </div>
+            </div>
+
+            colNo++;
+        }
+    </div>
+</section>
