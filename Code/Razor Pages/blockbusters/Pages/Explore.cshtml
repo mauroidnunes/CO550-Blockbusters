@@ -1,7 +1,7 @@
 ﻿@page
 @model blockbusters.Pages.ExploreModel
 @{
-    int colNo = 0;
+    int columnNo = 0;
 }
 
 <header class="jumbotron">
@@ -12,7 +12,7 @@
     <div class="row">
         @foreach (var item in Model.Movie) 
         {
-            if (colNo > 0 && colNo % 3 == 0)
+            if (columnNo > 0 && columnNo % 3 == 0)
             {
                 @:</div><div class="row">
             }
@@ -29,7 +29,7 @@
                 </div>
             </div>
 
-            colNo++;
+            columnNo++;
         }
     </div>
 </section>
