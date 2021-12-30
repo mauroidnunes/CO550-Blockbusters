@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using blockbusters.Data;
 using blockbusters.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace blockbusters.Pages.People
 {
+    [Authorize(Roles = "staff") ]
     public class IndexModel : PageModel
     {
         private readonly blockbusters.Data.ApplicationDbContext _context;
