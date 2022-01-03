@@ -1250,3 +1250,4 @@ D:\CO550-Teams\BlockBusters3\Code\Razor Pages\blockbusters\obj\Debug\net5.0\bloc
 D:\CO550-Teams\BlockBusters3\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Explore.cshtml.g.cs
 C:\Users\munir\OneDrive - Buckinghamshire New University\Documents\BLOCKBUSTER\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Explore.cshtml.g.cs
 C:\Users\munir\OneDrive - Buckinghamshire New University\Documents\BLOCKBUSTER\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\MyAccount.cshtml.g.cs
+C:\Users\munir\OneDrive - Buckinghamshire New University\Documents\BLOCKBUSTER\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Video.cshtml.g.cs
