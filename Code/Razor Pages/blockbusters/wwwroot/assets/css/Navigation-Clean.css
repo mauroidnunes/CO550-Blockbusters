@@ -1,0 +1,136 @@
+.navigation-clean {
+  background: #fff;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  color: #333;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 0;
+}
+
+@media (min-width:768px) {
+  .navigation-clean {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 699px) {
+  #NavText {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #NavIconSearch {
+    margin-right: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #NavButtons {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #NavButtons {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .content-barrier {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .content-barrier {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #NavIcon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #NavIcon {
+    margin-right: 0px;
+  }
+}
+
+.navigation-clean .navbar-brand {
+  font-weight: bold;
+  color: inherit;
+}
+
+#Search:focus, input:focus {
+  outline: none;
+}
+
+#Search::-webkit-search-cancel-button {
+  position: relative;
+  right: -20px;
+}
+
+.navbar.scrolled {
+  background-color: rgb(0,0,0) !important;
+  border-bottom: 1px solid rgba(50,50,50,0.67)!important;
+}
+
+.navbar .nav-link {
+  color: #555;
+}
+
+#SearchBar {
+  display: none;
+}
+
+.navbar {
+  transition: background 0.25s, border-bottom 0.25s;
+}
+
+#NavButtons {
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 1s, transform 0.2s, margin-right 1s, margin-left 1s;
+  font-family: 'Inter Semi Bold';
+}
+
+#NavButtons:active {
+  transform: scale(0.9, 0.9);
+}
+
+#NavButtons:hover {
+  color: white !important;
+}
+
+#NavText {
+  font-size: 18px;
+  padding: 0px;
+  transition: display 2s;
+}
+
+.logo {
+  margin: auto;
+  margin-left: 15px;
+  border-radius: 81px;
+  height: 30px;
+  width: 170px;
+  object-fit: cover;
+  transition: width 1s;
+  object-position: left;
+}
+
+.gallery-caption {
+  height: 200px;
+  transition: all 2s;
+}
+

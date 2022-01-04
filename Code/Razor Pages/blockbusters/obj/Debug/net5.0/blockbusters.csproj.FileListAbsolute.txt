@@ -1251,3 +1251,14 @@ D:\CO550-Teams\BlockBusters3\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razo
 C:\Users\munir\OneDrive - Buckinghamshire New University\Documents\BLOCKBUSTER\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Explore.cshtml.g.cs
 C:\Users\munir\OneDrive - Buckinghamshire New University\Documents\BLOCKBUSTER\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\MyAccount.cshtml.g.cs
 C:\Users\munir\OneDrive - Buckinghamshire New University\Documents\BLOCKBUSTER\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Video.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Explore.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Movies\_ViewStart.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\MyAccount.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\OrderItems\_ViewStart.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Orders\_ViewStart.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Payments\_ViewStart.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\PeopleGenres\_ViewStart.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\PeopleReviews\_ViewStart.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\People\_ViewStart.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Shared\_StaffLayout.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Video.cshtml.g.cs
