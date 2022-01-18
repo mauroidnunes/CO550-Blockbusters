@@ -188,7 +188,7 @@ namespace blockbusters.Data
                     ReleaseDate=new DateTime(2014, 10, 29),
                     LeadingDirector="Christopher Nolan",
                     LeadingProducer="Christopher Nolan",
-                    ContentLocation = "interstellar.jpg",
+                    ContentLocation = "/baseimagelocation/",
                     Price=12.99m,
                     Rating = 0
                 },
@@ -200,7 +200,7 @@ namespace blockbusters.Data
                     ReleaseDate=new DateTime(2004, 05, 31),
                     LeadingDirector="Alfonso Cuarón",
                     LeadingProducer="Chris Columbus",
-                    ContentLocation = "azkaban.jpg",
+                    ContentLocation = "/baseimagelocation/",
                     Price=10.99m,
                     Rating = 0
                 },
@@ -211,7 +211,7 @@ namespace blockbusters.Data
                     ReleaseDate=new DateTime(2007, 11, 02),
                     LeadingDirector="Shoaib Mansoor",
                     LeadingProducer="Shoaib Mansoor",
-                    ContentLocation = "khuda.jpg",
+                    ContentLocation = "/baseimagelocation/",
                     Price=9.99m,
                     Rating = 0
                 },
@@ -223,7 +223,7 @@ namespace blockbusters.Data
                     ReleaseDate=new DateTime(2016, 05, 06),
                     LeadingDirector="Anjum Shahzad",
                     LeadingProducer="Badar Ikram",
-                    ContentLocation = "mahemir.jpg",
+                    ContentLocation = "/baseimagelocation/",
                     Price=2.99m,
                     Rating = 0
                 },
@@ -235,7 +235,7 @@ namespace blockbusters.Data
                     ReleaseDate=new DateTime(2005, 09, 23),
                     LeadingDirector="Hayao Miyazaki",
                     LeadingProducer="Rick Dempsey",
-                    ContentLocation = "howls.jpg",
+                    ContentLocation = "/baseimagelocation/",
                     Price=5.99m,
                     Rating = 0
                 },
@@ -247,7 +247,7 @@ namespace blockbusters.Data
                     ReleaseDate=new DateTime(2019, 04, 25),
                     LeadingDirector="Anthony Russo",
                     LeadingProducer="Victoria Alonso",
-                    ContentLocation = "endgame.jpg",
+                    ContentLocation = "/baseimagelocation/",
                     Price=6.99m,
                     Rating = 0
                 },
@@ -259,7 +259,7 @@ namespace blockbusters.Data
                     ReleaseDate=new DateTime(1994, 10, 21),
                     LeadingDirector="Quentin Tarantino",
                     LeadingProducer="Lawrence Bender",
-                    ContentLocation = "pulp fiction.jpg",
+                    ContentLocation = "/baseimagelocation/",
                     Price=8.99m,
                     Rating = 0
                 },
@@ -271,7 +271,7 @@ namespace blockbusters.Data
                     ReleaseDate=new DateTime(2003, 11, 16),
                     LeadingDirector="Richard Curtis",
                     LeadingProducer="Tim Bevan",
-                    ContentLocation = "loveactually.jpg",
+                    ContentLocation = "/baseimagelocation/",
                     Price=9.99m,
                     Rating = 0
                 },
@@ -283,7 +283,7 @@ namespace blockbusters.Data
                     ReleaseDate=new DateTime(2019, 10, 09),
                     LeadingDirector="Benny Safdie",
                     LeadingProducer="Michael Bartol",
-                    ContentLocation = "uncutgems.jpg",
+                    ContentLocation = "/baseimagelocation/",
                     Price=40.99m,
                     Rating = 0
                 },
@@ -294,7 +294,7 @@ namespace blockbusters.Data
                     ReleaseDate=new DateTime(2011, 04, 29),
                     LeadingDirector="James Wan",
                     LeadingProducer="Jason Blum",
-                    ContentLocation = "insidious.jpg",
+                    ContentLocation = "/baseimagelocation/",
                     Price=20.99m,
                     Rating = 0
                 },

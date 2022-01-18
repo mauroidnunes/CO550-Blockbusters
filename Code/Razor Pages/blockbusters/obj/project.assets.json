@@ -7499,11 +7499,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Haroon\\Documents\\GitHub\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj",
+      "projectUniqueName": "C:\\Users\\Haroon\\Downloads\\CO550-Blockbusters-985e7c3357c6c82058d617eff157f8bf76a0c13a\\CO550-Blockbusters-985e7c3357c6c82058d617eff157f8bf76a0c13a\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj",
       "projectName": "blockbusters",
-      "projectPath": "C:\\Users\\Haroon\\Documents\\GitHub\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj",
+      "projectPath": "C:\\Users\\Haroon\\Downloads\\CO550-Blockbusters-985e7c3357c6c82058d617eff157f8bf76a0c13a\\CO550-Blockbusters-985e7c3357c6c82058d617eff157f8bf76a0c13a\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj",
       "packagesPath": "C:\\Users\\Haroon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Haroon\\Documents\\GitHub\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\obj\\",
+      "outputPath": "C:\\Users\\Haroon\\Downloads\\CO550-Blockbusters-985e7c3357c6c82058d617eff157f8bf76a0c13a\\CO550-Blockbusters-985e7c3357c6c82058d617eff157f8bf76a0c13a\\Code\\Razor Pages\\blockbusters\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,25 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Black.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Black%20Italic.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Bold.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Bold%20Italic.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Extra%20Bold.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Extra%20Bold%20Italic.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Italic.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Medium.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Medium%20Italic.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Regular.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Semi%20Bold.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Semi%20Bold%20Italic.css">
-    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/iframe.css">
-    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
-    <link rel="stylesheet" href="assets/css/splide.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
 
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
@@ -43,8 +24,3 @@ else
     </li>
 }
 </ul>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="assets/js/scroll_colour.js"></script>
-    <script src="assets/js/search_overlay.js"></script>
