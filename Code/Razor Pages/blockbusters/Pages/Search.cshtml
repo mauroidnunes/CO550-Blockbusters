@@ -1,0 +1,126 @@
+﻿@page
+@model blockbusters.Pages.SearchModel
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+<form asp-page="./Search" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Find by name:
+            <input type="text" name="SearchString" value="@Model.CurrentFilter" />
+            <input type="submit" value="Search" class="btn btn-primary" /> |
+            <a asp-page="./Search">Back to full List</a>
+        </p>
+    </div>
+</form>
+<form asp-page="./Search" method="get">
+    <div class="form-actions no-color">
+        <input type="submit" value="Action" name="genreType" value="0" class="btn btn-primary" />
+        <input type="submit" value="Adventure" name="genreType" value="1" class="btn btn-primary" />
+        <input type="submit" value="Comedy" name="genreType" value="2" class="btn btn-primary" />
+        <input type="submit" value="Mystery" name="genreType" value="3" class="btn btn-primary" />
+        <input type="submit" value="Fantasy" name="genreType" value="4" class="btn btn-primary" />
+        <input type="submit" value="Fiction" name="genreType" value="5" class="btn btn-primary" />
+        <input type="submit" value="Horror" name="genreType" value="6" class="btn btn-primary" />
+        <input type="submit" value="Romance" name="genreType" value="7" class="btn btn-primary" />
+        <input type="submit" value="Satire" name="genreType" value="8" class="btn btn-primary" />
+        <input type="submit" value="SciFi" name="genreType" value="9" class="btn btn-primary" />
+        <input type="submit" value="Thriller" name="genreType" value="10" class="btn btn-primary" />
+        <input type="submit" value="Western" name="genreType" value="11" class="btn btn-primary" />
+
+
+    </div>
+</form>
+<a asp-page="./Search" asp-route-sortOrder="@Model.NameSort">
+    <input type="submit" value="Title" class="btn btn-primary" />
+</a>
+<a asp-page="./Search" asp-route-sortOrder="@Model.DateSort">
+    <input type="submit" value="Release Date" class="btn btn-primary" />
+</a>
+<a asp-page="./Search" asp-route-sortOrder="@Model.PriceSort">
+    <input type="submit" value="Price" class="btn btn-primary" />
+</a>
+<a asp-page="./Search" asp-route-sortOrder="@Model.RatingSort">
+    <input type="submit" value="Rating" class="btn btn-primary" />
+</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-page="./Search" asp-route-sortOrder="@Model.NameSort">
+                    @Html.DisplayNameFor(model => model.Movie[0].Title)
+                </a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].Description)
+            </th>
+            <th>
+                <a asp-page="./Search" asp-route-sortOrder="@Model.DateSort">
+                    @Html.DisplayNameFor(model => model.Movie[0].ReleaseDate)
+                </a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].LeadingDirector)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].LeadingProducer)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].ContentLocation)
+            </th>
+            <th>
+                <a asp-page="./Search" asp-route-sortOrder="@Model.PriceSort">
+                @Html.DisplayNameFor(model => model.Movie[0].Price)
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Search" asp-route-sortOrder="@Model.RatingSort">
+                    @Html.DisplayNameFor(model => model.Movie[0].Rating)
+                </a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].Genre)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Movie) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LeadingDirector)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LeadingProducer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContentLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                <a asp-page="./Video" asp-route-id="@item.MovieID">Details</a> |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

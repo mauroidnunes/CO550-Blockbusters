@@ -27,11 +27,11 @@ namespace blockbusters.Data
             var people = new Person[]
             {
 
-                new Person{Email="bob14@email.com",FirstName="Bob",LastName = "Smith",StaffAccount=false,PaymentID = 1},
+                new Person{Email="customer1@mail.com",FirstName="Bob",LastName = "Smith",StaffAccount=false,PaymentID = 1},
                 new Person{Email="Ruairi412@email.com",FirstName="Ruairi",LastName="Hawes",StaffAccount=false, PaymentID = 2},
                 new Person{Email="Millie635@email.com",FirstName="Millie",LastName="Storey",StaffAccount=false, PaymentID = 3},
                 new Person{Email="Carys45@email.com",FirstName="Carys",LastName="Brock",StaffAccount=false, PaymentID = 4},
-                new Person{Email="Priyanka4532@email.com",FirstName="Priyanka",LastName="Parkes",StaffAccount=true, PaymentID = 5},
+                new Person{Email="staff1@mail.com",FirstName="Priyanka",LastName="Parkes",StaffAccount=true, PaymentID = 5},
                 new Person{Email="Arnold3578@email.com",FirstName="Arnold",LastName="Carys",StaffAccount=false, PaymentID = 6},
                 new Person{Email="Renesmae567@email.com",FirstName="Renesmae",LastName="Chen",StaffAccount=false, PaymentID = 7},
                 new Person{Email="Joe9@email.com",FirstName="Joe",LastName="Byren",StaffAccount=true, PaymentID = 8},
@@ -104,7 +104,7 @@ namespace blockbusters.Data
             var orders = new Order[]
             {
 
-                new Order{OrderDate=new DateTime(2020, 12, 4, 5, 12, 20),Completed=true, PersonID = 10}, 
+                new Order{OrderDate=new DateTime(2020, 12, 4, 5, 12, 20),Completed=true, PersonID = 10},
                 new Order{OrderDate=new DateTime(2018, 8, 12, 8, 16, 43),Completed=false, PersonID = 1},
                 new Order{OrderDate=new DateTime(2016, 7, 22, 23, 20, 23),Completed=false, PersonID = 2},
                 new Order{OrderDate=new DateTime(2019, 8, 2, 1, 41, 44),Completed=true, PersonID = 3},
@@ -190,7 +190,8 @@ namespace blockbusters.Data
                     LeadingProducer="Christopher Nolan",
                     ContentLocation = "interstellar.jpg",
                     Price=12.99m,
-                    Rating = 0
+                    Rating = 8.6,
+                    Genre = Genre.SciFi
                 },
                 new Movie
                 {
@@ -202,7 +203,8 @@ namespace blockbusters.Data
                     LeadingProducer="Chris Columbus",
                     ContentLocation = "azkaban.jpg",
                     Price=10.99m,
-                    Rating = 0
+                    Rating = 7.9,
+                    Genre = Genre.Adventure
                 },
                 new Movie
                 {
@@ -213,7 +215,8 @@ namespace blockbusters.Data
                     LeadingProducer="Shoaib Mansoor",
                     ContentLocation = "khuda.jpg",
                     Price=9.99m,
-                    Rating = 0
+                    Rating = 8.4,
+                    Genre = Genre.Thriller
                 },
                 new Movie
                 {
@@ -225,7 +228,8 @@ namespace blockbusters.Data
                     LeadingProducer="Badar Ikram",
                     ContentLocation = "mahemir.jpg",
                     Price=2.99m,
-                    Rating = 0
+                    Rating = 7.2,
+                    Genre = Genre.Romance
                 },
                 new Movie
                 {
@@ -237,7 +241,8 @@ namespace blockbusters.Data
                     LeadingProducer="Rick Dempsey",
                     ContentLocation = "howls.jpg",
                     Price=5.99m,
-                    Rating = 0
+                    Rating = 8.2,
+                    Genre = Genre.Fantasy
                 },
                 new Movie
                 {
@@ -249,7 +254,8 @@ namespace blockbusters.Data
                     LeadingProducer="Victoria Alonso",
                     ContentLocation = "endgame.jpg",
                     Price=6.99m,
-                    Rating = 0
+                    Rating = 8.4,
+                    Genre = Genre.Action
                 },
                 new Movie
                 {
@@ -261,7 +267,8 @@ namespace blockbusters.Data
                     LeadingProducer="Lawrence Bender",
                     ContentLocation = "pulp fiction.jpg",
                     Price=8.99m,
-                    Rating = 0
+                    Rating = 8.9,
+                    Genre = Genre.Mystery
                 },
                 new Movie
                 {
@@ -273,7 +280,8 @@ namespace blockbusters.Data
                     LeadingProducer="Tim Bevan",
                     ContentLocation = "loveactually.jpg",
                     Price=9.99m,
-                    Rating = 0
+                    Rating = 7.6,
+                    Genre = Genre.Romance
                 },
                 new Movie
                 {
@@ -285,7 +293,8 @@ namespace blockbusters.Data
                     LeadingProducer="Michael Bartol",
                     ContentLocation = "uncutgems.jpg",
                     Price=40.99m,
-                    Rating = 0
+                    Rating = 7.4,
+                    Genre = Genre.Comedy
                 },
                 new Movie
                 {
@@ -296,7 +305,8 @@ namespace blockbusters.Data
                     LeadingProducer="Jason Blum",
                     ContentLocation = "insidious.jpg",
                     Price=20.99m,
-                    Rating = 0
+                    Rating = 6.8,
+                    Genre = Genre.Horror
                 },
             };
 

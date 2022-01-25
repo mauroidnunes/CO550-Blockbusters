@@ -11,7 +11,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form method="post">
+        <form method="post" enctype="multipart/form-data" >
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Movie.MovieID" />
             <div class="form-group">
@@ -39,11 +39,12 @@
                 <input asp-for="Movie.LeadingProducer" class="form-control" />
                 <span asp-validation-for="Movie.LeadingProducer" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <input asp-for="UploadedFile" />
+@*            <div class="form-group">
                 <label asp-for="Movie.ContentLocation" class="control-label"></label>
                 <input asp-for="Movie.ContentLocation" class="form-control" />
                 <span asp-validation-for="Movie.ContentLocation" class="text-danger"></span>
-            </div>
+            </div>*@
             <div class="form-group">
                 <label asp-for="Movie.Price" class="control-label"></label>
                 <input asp-for="Movie.Price" class="form-control" />

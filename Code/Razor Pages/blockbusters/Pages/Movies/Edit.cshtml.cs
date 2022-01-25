@@ -8,16 +8,26 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using blockbusters.Data;
 using blockbusters.Models;
+using Microsoft.AspNetCore.Http;
+using System.IO;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace blockbusters.Pages.Movies
 {
     public class EditModel : PageModel
     {
         private readonly blockbusters.Data.ApplicationDbContext _context;
+        private readonly ILogger<IndexModel> _logger;
+        private readonly IHostEnvironment _environment;
+        [BindProperty]
+        public IFormFile UploadedFile { get; set; }
 
-        public EditModel(blockbusters.Data.ApplicationDbContext context)
+        public EditModel(blockbusters.Data.ApplicationDbContext context, ILogger<IndexModel> logger, IHostEnvironment environment)
         {
             _context = context;
+            _logger = logger;
+            _environment = environment;
         }
 
         [BindProperty]
@@ -50,8 +60,26 @@ namespace blockbusters.Pages.Movies
 
             _context.Attach(Movie).State = EntityState.Modified;
 
+            //if (UploadedFile == null || UploadedFile.Length == 0)
+            //{
+            //    return Page();
+            //}
+
+            Movie.ContentLocation = Movie.ContentLocation;
+
             try
             {
+                if(UploadedFile != null && UploadedFile.Length != 0)
+                {
+                    Movie.ContentLocation = UploadedFile.FileName;
+                    _logger.LogInformation($"Uploading {UploadedFile.FileName}.");
+                    string targetFileName = $"{_environment.ContentRootPath}/wwwroot/images/{UploadedFile.FileName}";
+                    using (var stream = new FileStream(targetFileName, FileMode.Create))
+                    {
+                        await UploadedFile.CopyToAsync(stream);
+                    }
+                }
+
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
@@ -73,5 +101,6 @@ namespace blockbusters.Pages.Movies
         {
             return _context.Movies.Any(e => e.MovieID == id);
         }
+
     }
 }

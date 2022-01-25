@@ -35,6 +35,12 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Person.StaffAccount)
         </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Person.Payment)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Person.Payment.CCV)
+        </dd>
     </dl>
 </div>
 <div>
