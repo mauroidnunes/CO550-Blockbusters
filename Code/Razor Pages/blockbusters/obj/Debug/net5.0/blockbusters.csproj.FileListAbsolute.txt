@@ -1454,3 +1454,13 @@ C:\Users\Haroon\Downloads\CO550-Blockbusters-985e7c3357c6c82058d617eff157f8bf76a
 C:\Users\Haroon\Downloads\CO550-Blockbusters-985e7c3357c6c82058d617eff157f8bf76a0c13a\CO550-Blockbusters-985e7c3357c6c82058d617eff157f8bf76a0c13a\Code\Razor Pages\blockbusters\obj\Debug\net5.0\ref\blockbusters.dll
 C:\Users\Haroon\Downloads\CO550-Blockbusters-985e7c3357c6c82058d617eff157f8bf76a0c13a\CO550-Blockbusters-985e7c3357c6c82058d617eff157f8bf76a0c13a\Code\Razor Pages\blockbusters\obj\Debug\net5.0\blockbusters.pdb
 C:\Users\Haroon\Downloads\CO550-Blockbusters-985e7c3357c6c82058d617eff157f8bf76a0c13a\CO550-Blockbusters-985e7c3357c6c82058d617eff157f8bf76a0c13a\Code\Razor Pages\blockbusters\obj\Debug\net5.0\blockbusters.genruntimeconfig.cache
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Explore.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Movies\_ViewStart.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\MyAccount.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\OrderItems\_ViewStart.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Orders\_ViewStart.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Payments\_ViewStart.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\PeopleGenres\_ViewStart.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\PeopleReviews\_ViewStart.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\People\_ViewStart.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Shared\_StaffLayout.cshtml.g.cs
