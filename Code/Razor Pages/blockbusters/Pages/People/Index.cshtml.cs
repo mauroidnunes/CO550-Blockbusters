@@ -11,8 +11,8 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace blockbusters.Pages.People
 {
-    
-    //[Authorize(Roles ="staff")]
+
+    [Authorize(Roles = "staff")]
     public class IndexModel : PageModel
     {
         private readonly blockbusters.Data.ApplicationDbContext _context;

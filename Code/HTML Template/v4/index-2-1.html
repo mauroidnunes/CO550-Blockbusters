@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>blockbusters</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Black.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Black%20Italic.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Bold.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Bold%20Italic.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Extra%20Bold.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Extra%20Bold%20Italic.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Italic.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Medium.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Medium%20Italic.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Regular.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Semi%20Bold.css">
+    <link rel="stylesheet" href="assets/css/Inter%20Semi%20Bold%20Italic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="assets/css/dropdown-search-bs4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/iframe.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Responsive-Youtube-Embed.css">
+    <link rel="stylesheet" href="assets/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background: rgb(13,13,13);">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" style="padding: 0px;height: 72px;z-index: 50;background: linear-gradient(rgba(0,0,0,0.75) 3%, rgba(255,255,255,0));">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="d-flex justify-content-start" style="width: 15%;height: 72px;"><a id="NavButtons" href="index.html" style="color: rgb(255,255,255);margin: auto;padding: 0px;margin-left: 15px;"><img class="logo" src="assets/img/logofinal.svg" href="index.html"></a></div>
+            <div style="width: 70%;height: 72px;position: relative;text-align: center;">
+                <div class="d-flex justify-content-center" style="position: absolute;top: 0;left: 0;width: 100%;margin-top: 19px;"><a id="NavButtons" href="index.html" style="color: white;"><i class="material-icons col" id="NavIcon" style="padding: 0px;margin: auto;margin-top: 4px;width: 24px;">home</i>
+                        <p id="NavText" class="col">Home</p>
+                    </a><a id="NavButtons" class="row" href="explore.html"><i class="material-icons col" id="NavIcon" style="padding: 0px;margin: auto;margin-top: 4px;width: 24px;">explore</i>
+                        <p id="NavText" class="col">Explore</p>
+                    </a><a id="NavButtons" class="row" href="library.html"><i class="material-icons col" id="NavIcon" style="padding: 0px;margin: auto;margin-top: 4px;width: 24px;">video_library</i>
+                        <p id="NavText" class="col">Library</p>
+                    </a><a id="NavButtons" class="row" onclick="searchOn()"><i class="material-icons col" id="NavIconSearch" style="padding: 0px;margin: auto;margin-top: 4px;width: 24px;">search</i>
+                        <p id="NavText" class="col" href="#">Search</p>
+                    </a></div>
+            </div>
+            <div class="d-flex justify-content-end" style="width: 15%;height: 72px;">
+                <div class="dropdown" style="padding: 0px;margin: auto;margin-right: 15px;border-radius: 7px;"><button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 0px;/*margin: auto;*//*margin-right: 15px;*//*border-radius: 7px;*/height: 35px;width: 35px;background: rgb(54,54,54);border-color: rgb(81,81,81);z-index: 113;"><i class="material-icons" style="padding-top: 4px;">person</i></button>
+                    <div class="dropdown-menu" style="margin-left: -124px;margin-top: 8px;background: rgb(40,40,40);border: 1px solid rgba(50,50,50,0.67)!important;">
+                        <p></p><a class="dropdown-item" href="#">Angular</a><a class="dropdown-item" href="#">Angular</a><a class="dropdown-item" href="#">Java</a><a class="dropdown-item" href="#">JavaScript</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="SearchOverlay">
+        <div style="/*position: fixed;*/width: 100%;height: 72px;display: flex;justify-content: center;">
+            <div class="flex-container" style="height: 54px;margin-top: auto;margin-bottom: auto;width: 800px;background: #212121;color: rgb(68,68,68);border-radius: 3px;border: 1px solid rgb(67,67,67);margin-right: 10px;margin-left: 10px;display: flex;justify-content: stretch;"><i class="material-icons" style="color: rgb(180,180,180);width: 54px;text-align: center;padding-top: 14px;cursor: pointer;" onclick="searchOff()">arrow_back</i><input type="search" style="width: 100%;border-style: none;color: rgb(255,255,255);font-weight: 600;padding-right: 15px;padding-left: 0px;background: rgba(255,255,255,0);" placeholder="Search"></div>
+        </div>
+        <div style="width: 100%;height: 100%;padding-right: 10px;padding-left: 10px;padding-bottom: 9px;"></div>
+    </div>
+    <div class="content-barrier" style="padding-bottom: 50px;">
+        <div style="margin: 0px;padding: 0px;">
+            <div>
+                <div id="primary-slider" class="splide" style="height: 500px;top: 0;left: 0;width: 100%;position: absolute;">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img class="img-thumbnail" src="assets/img/2.png"></li>
+                            <li class="splide__slide"><img src="assets/img/1.png"></li>
+                            <li class="splide__slide"><img src="assets/img/9.png"></li>
+                            <li class="splide__slide"><img src="assets/img/8.png"></li>
+                        </ul>
+                        <div style="height: 100%;margin-top: -500px;position: absolute;width: 100%;background: linear-gradient(rgba(0,0,0,0.59) 0%, rgb(13,13,13) 100%);"></div>
+                    </div>
+                </div>
+                <div id="secondary-slider" class="splide" style="height: 500px;/*position: absolute;*/top: 0;left: 0;width: 100%;">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide row">
+                                <div class="col-lg">
+                                    <div class="gallery-caption"><img src="assets/img/Shrek_2_logo_used_on_mercindise.png" style="height: 60px;">
+                                        <div style="height: 28px;margin-top: 10px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(255,255,255,0.29);">Action</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(242,189,0,0.29);">8K</label></div>
+                                        <p style="width: 100%;height: 300px;color: #ffffff;margin-top: -10px;"><br><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg vid-div">
+                                    <div class="video-container" style="margin-top: 83px;border-radius: 7px;margin-right: 70px;padding-bottom: 352px;"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/KSJ7Kfonn7I?loop=1&amp;playlist=KSJ7Kfonn7I" width="853" height="480"></iframe></div>
+                                </div>
+                            </li>
+                            <li class="splide__slide row">
+                                <div class="col-lg">
+                                    <div class="gallery-caption"><img src="assets/img/305-3057815_interstellar-interstellar-logo-png.png" style="height: 60px;">
+                                        <div style="height: 28px;margin-top: 10px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(255,255,255,0.29);">Action</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(242,189,0,0.29);">144p</label></div>
+                                        <p style="width: 100%;height: 300px;color: #ffffff;margin-top: -10px;"><br><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg vid-div"><iframe width="80%" height="70%" style="margin-top:100px;boder-radius:3px" src="https://www.youtube.com/embed/zSWdZVtXT7E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            </li>
+                            <li class="splide__slide row">
+                                <div class="col-lg">
+                                    <div class="gallery-caption"><img src="assets/img/Shrek_2_logo_used_on_mercindise.png" style="height: 60px;">
+                                        <div style="height: 28px;margin-top: 10px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(255,255,255,0.29);">Action</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(242,189,0,0.29);">144p</label></div>
+                                        <p style="width: 100%;height: 300px;color: #ffffff;margin-top: -10px;"><br><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg vid-div"><iframe width="80%" height="70%" style="margin-top:100px" src="https://www.youtube.com/embed/V6X5ti4YlG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p id="NavText-2" class="col" style="color: rgb(255,255,255);font-size: 24px;margin-top: 28px;margin-bottom: 29px;">Recommended for you</p>
+            <div id="primary-slider1" class="splide">
+                <div class="splide__track rounded-slider">
+                    <ul class="splide__list">
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-14" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-49" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-48" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-47" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-46" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-45" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-36" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-35" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-34" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-33" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-32" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <p id="NavText-12" class="col" style="color: rgb(255,255,255);font-size: 24px;margin-top: 28px;margin-bottom: 29px;">Weekly roundup</p>
+            <div id="primary-slider2" class="splide">
+                <div class="splide__track rounded-slider">
+                    <ul class="splide__list">
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-26" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-23" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-24" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-25" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-27" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-28" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-29" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-30" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-31" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-37" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-38" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <p id="NavText-13" class="col" style="color: rgb(255,255,255);font-size: 24px;margin-top: 28px;margin-bottom: 29px;">New</p>
+            <div id="primary-slider3" class="splide">
+                <div class="splide__track rounded-slider">
+                    <ul class="splide__list">
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-11" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-15" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-16" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-17" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-18" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-19" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-20" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-21" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-22" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-39" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a class="thumbnail-link" href="#" style="text-decoration: none;">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="assets/img/2.png">
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-40" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="d-flex justify-content-center align-items-center" style="height: 90px;border-top: 1px solid rgba(50,50,50,0.67)!important;background: #000000;">
+        <p style="font-weight: 500;color: rgb(98,98,98);font-size: 20px;font-family: 'Inter Bold';margin-top: 15px;">blockbusters© 2022<br></p><button class="btn btn-primary btn-secondary" type="button" style="background: rgb(44,44,44);color: rgb(159,159,159);position: absolute;right: 0;margin-right: 19px;margin-top: -2px;border-color: rgb(59,59,59);">Staff</button>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/dropdown-search-bs4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/scroll_colour.js"></script>
+    <script src="assets/js/search_overlay.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/splide.min.js"></script>
+</body>
+
+</html>

@@ -3,19 +3,31 @@
 @{
     ViewData["Title"] = "Log out";
 }
-
-<header>
-    <h1>@ViewData["Title"]</h1>
-    @{
+<div>
+    <img src="~/assets/img/9.png" style="width: 100%;z-index: -100;position: fixed;transform: scale(1.10);filter: blur(58px) brightness(20%) saturate(133%);">
+</div>
+        <div style="margin: 0px;padding: 0px;padding-top: 140px;">
+            <div class="row justify-content-center" style="margin: -1px;">
+                <div style="transition: all 1s;padding: 21px;background: #232323;border-radius: 7px;margin-top: 20px;margin: 6px;max-width: 572px;width: 100%;padding-bottom: 39px;">
+        @{
         if (User.Identity.IsAuthenticated)
         {
             <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
-                <button type="submit" class="nav-link btn btn-link text-dark">Click here to Logout</button>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-secondary" type="button" style="background: rgb(55,55,55);color: rgb(159,159,159);margin-top: 2px;border-color: rgb(59,59,59);">Click here to Logout</button>
+                    </div>
             </form>
         }
         else
         {
-            <p>You have successfully logged out of the application.</p>
+                    <p id="NavText-14" class="col" style="color: rgb(255,255,255);font-size: 21px;margin-top: 9px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;text-align: center;margin-bottom: 14px;">Logged Out</p>
+                    <p id="NavText-2" class="col" style="color: white;font-size: 18px;font-family: 'Inter Medium';max-width: 100%;text-align: center;">Successfully logged out</p>
+                    <div class="text-center">
+                        <button asp-page="/Index" onclick="history.back()" class="btn btn-primary btn-secondary" type="button" style="background: rgb(55,55,55);color: rgb(159,159,159);margin-top: 2px;border-color: rgb(59,59,59);">Home Page</button>
+                    </div>
         }
     }
-</header>
+
+                </div>
+            </div>
+        </div>

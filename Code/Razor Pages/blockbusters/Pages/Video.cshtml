@@ -3,27 +3,114 @@
 @{
 }
 
-<header class="jumbotron">
-    <h1>@Model.Movie.Title</h1>
-</header>
+<div style="margin: 0px;padding: 0px;padding-top: 64px;">
+            <div style="background: #323232;border-radius: 7px;margin: 0px;/*margin-top: 20px;*/min-height: 382px;">
+                <div>
+    <img src="/images/@Html.DisplayFor(model => model.Movie.ContentLocation)" style="width: 100%;z-index: -100;position: fixed;transform: scale(1.10);filter: blur(58px) brightness(20%) saturate(133%);">
+</div>
+                <div class="row" style="/*min-height: 382px;*//*background: rgba(255,255,255,0.13);*//*border-radius: 7px;*/margin: 0px;margin-top: 20px;">
+                    <div class="d-flex justify-content-center" style="padding: 20px;">
+                        <div class="moviecol"><img src="/images/@Html.DisplayFor(model => model.Movie.ContentLocation)" style="border-radius: 6px;width: 300px;height: 400px; object-fit: cover;">
+                            <p id="NavText-3" class="col" style="color: rgb(255,255,255);font-size: 24px;margin-top: 17px;padding-right: 6px;padding-left: 8px;font-family: 'Inter Bold';max-width: 100%;">@Html.DisplayFor(model => model.Movie.Title)</p>
+                            <div style="height: 28px;margin-top: -13px;margin-right: 7px;margin-left: 7px;">
+                            <label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 16px;">@Html.DisplayFor(model => model.Movie.Genre)</label>
+                            <label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 16px;">@Model.Movie.ReleaseDate.ToString("yyyy")</label>
+                            <label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 16px;">@Html.DisplayFor(model => model.Movie.Rating)</label></div>
+                            <p style="font-family: 'Inter Medium';color: rgb(255,255,255);max-width: 100%;padding: 6px;margin-top: 13px;">@Html.DisplayFor(model => model.Movie.Description)<br></p>
+                            <div style="width: 100%;height: 74px;border-radius: 7px;background: rgba(82,255,0,0.38);text-align: center;padding: 9px;"><i class="material-icons" style="color: rgb(255,255,255);">play_arrow</i>
+                                <p style="font-family: 'Inter Bold';color: rgb(255,255,255);">@Html.DisplayFor(model => model.Movie.Price)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col video-padding" style="padding: 20px;padding-left: 0px;">
+                        <div class="video-container" style="width: 100%;height: 100%;border-radius: 6px;"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/KSJ7Kfonn7I?loop=1&amp;playlist=KSJ7Kfonn7I" width="853" height="480"></iframe></div>
+                    </div>
+                </div>
+            </div>
+                        
+            <p id="NavText-1" class="col" style="color: rgb(255,255,255);font-size: 24px;margin-top: 30px;margin-bottom: 29px;">Recommended</p>
+            <div id="primary-slider1" class="splide" style="margin-bottom: 34px;">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
+                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
+                                    <div style="margin-top: -69px;margin-left: 12px;">
+                                        <p id="NavText-23" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
+                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
+                                    <div style="margin-top: -69px;margin-left: 12px;">
+                                        <p id="NavText-24" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
+                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
+                                    <div style="margin-top: -69px;margin-left: 12px;">
+                                        <p id="NavText-25" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
+                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
+                                    <div style="margin-top: -69px;margin-left: 12px;">
+                                        <p id="NavText-26" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
+                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
+                                    <div style="margin-top: -69px;margin-left: 12px;">
+                                        <p id="NavText-27" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
+                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
+                                    <div style="margin-top: -69px;margin-left: 12px;">
+                                        <p id="NavText-28" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
+                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
+                                    <div style="margin-top: -69px;margin-left: 12px;">
+                                        <p id="NavText-29" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
+                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
+                                    <div style="margin-top: -69px;margin-left: 12px;">
+                                        <p id="NavText-30" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
+                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
+                                    <div style="margin-top: -69px;margin-left: 12px;">
+                                        <p id="NavText-31" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
+                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
 
-
+            </div>
 <div>
-    <h4>Movie</h4>
-    <hr />
     <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Movie.Title)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Movie.Title)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Movie.Description)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Movie.Description)
-        </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Movie.ReleaseDate)
         </dt>
@@ -42,32 +129,6 @@
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Movie.LeadingProducer)
         </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Movie.ContentLocation)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Movie.ContentLocation)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Movie.Price)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Movie.Price)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Movie.Rating)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Movie.Rating)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Movie.Genre)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Movie.Genre)
-        </dd>
+
     </dl>
-</div>
-<div>
-    <a onclick="history.back()">Back to List</a>
 </div>

@@ -41,6 +41,9 @@ namespace blockbusters.Models
         [Display(Name = "Content Location")]
         public string ContentLocation { get; set; } = "/baseimagelocation/";
 
+        [Display(Name = "Content Location")]
+        public string MovieTrailer { get; set; } = "/baseimagelocation/";
+
         [Required(ErrorMessage = "Field is required")]
         [DataType(DataType.Currency)]
         [Column(TypeName = "money")]

@@ -1,0 +1,51 @@
+section {
+  width: 100%;
+  height: 238px;
+  border: none;
+  overflow: hidden;
+}
+
+.moviecol {
+  width: 300px;
+}
+
+.genre-label {
+  color: white;
+  font-family: 'Inter Medium';
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  border-radius: 2px;
+  margin-right: 5px;
+  background: rgba(195,195,195,0.29);
+  font-size: 16px;
+}
+
+.moviethumbnail {
+  transition: all 1s;
+  padding: 13px;
+  background: rgba(255,255,255,0.13);
+  border-radius: 7px;
+  margin-top: 20px;
+  width: 256px;
+  margin: 6px;
+}
+
+#NavText-1 {
+}
+
+a {
+}
+
+#UserOverlay {
+  z-index: 51;
+  -webkit-transition: opacity 600ms, visibility 600ms;
+  transition: opacity 0.15s, visibility 0.15s;
+  /*visibility: hidden;*/
+  /*opacity: 0%;*/
+  backdrop-filter: blur(3px);
+  position: fixed;
+  right: 0;
+}
+

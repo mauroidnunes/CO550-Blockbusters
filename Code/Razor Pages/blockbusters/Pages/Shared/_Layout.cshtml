@@ -6,35 +6,35 @@
     <title>@ViewData["Title"] - blockbusters</title>
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Black.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Black%20Italic.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Bold.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Bold%20Italic.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Extra%20Bold.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Extra%20Bold%20Italic.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Italic.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Medium.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Medium%20Italic.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Regular.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Semi%20Bold.css">
-    <link rel="stylesheet" href="assets/css/Inter%20Semi%20Bold%20Italic.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Black.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Black%20Italic.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Bold.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Bold%20Italic.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Extra%20Bold.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Extra%20Bold%20Italic.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Italic.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Medium.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Medium%20Italic.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Regular.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Semi%20Bold.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Semi%20Bold%20Italic.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
-    <link rel="stylesheet" href="assets/css/dropdown-search-bs4.css">
+    <link rel="stylesheet" href="~/assets/css/dropdown-search-bs4.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/iframe.css">
-    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
-    <link rel="stylesheet" href="assets/css/Responsive-Youtube-Embed.css">
-    <link rel="stylesheet" href="assets/css/splide.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="~/assets/css/iframe.css">
+    <link rel="stylesheet" href="~/assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="~/assets/css/Responsive-Youtube-Embed.css">
+    <link rel="stylesheet" href="~/assets/css/splide.min.css">
+    <link rel="stylesheet" href="~/assets/css/styles.css">
 </head>
 <body style="background: rgb(13,13,13); color:white">
     <header>
-    <nav class="navbar navbar-light navbar-expand-md fixed-top" style="padding: 0px;height: 72px;z-index: 50;background: linear-gradient(rgba(0,0,0,0.75) 3%, rgba(255,255,255,0));">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" style="padding: 0px;height: 72px;z-index: 50;background: linear-gradient(rgba(0,0,0,0.75) 3%, rgba(255,255,255,0));border-color: rgba(0,0,0,0);">
         <div class="container-fluid d-flex justify-content-between">
             <div class="d-flex justify-content-start" style="width: 15%;height: 72px;">
                 <a id="NavButtons" asp-page="/Index" style="color: rgb(255,255,255);margin: auto;padding: 0px;margin-left: 15px;">
-                    <img class="logo" src="assets/img/logofinal.svg" href="index.html">
+                    <img class="logo" src="~/images/logofinal.svg" href="index.html">
                     </a>
                     </div>
             <div style="width: 70%;height: 72px;position: relative;text-align: center;">
@@ -70,7 +70,7 @@
             <div class="flex-container" style="height: 54px;margin-top: auto;margin-bottom: auto;width: 800px;background: #212121;color: rgb(68,68,68);border-radius: 3px;border: 1px solid rgb(67,67,67);margin-right: 10px;margin-left: 10px;display: flex;justify-content: stretch;">
                 <i class="material-icons" style="color: rgb(180,180,180);width: 54px;text-align: center;padding-top: 14px;cursor: pointer;" onclick="searchOff()">arrow_back</i>
                 <form asp-page="./Search" method="get" style="width: 100%;margin-top: 14px;">
-                        <input type="search" name="SearchString" style="width: 100%;border-style: none;color: rgb(255,255,255);font-weight: 600;padding-right: 15px;padding-left: 0px;background: rgba(255,255,255,0);" placeholder="Search">
+                        <input class="search-input" type="search" name="SearchString" style="width: 100%;border-style: none;color: rgb(255,255,255);font-weight: 600;padding-right: 15px;padding-left: 0px;background: rgba(255,255,255,0);" placeholder="Search">
                  </form>
             </div>
         </div>
@@ -84,10 +84,12 @@
         </main>
     </div>
 
-    <footer class="d-flex justify-content-center align-items-center" style="height: 90px;border-top: 1px solid rgba(50,50,50,0.67)!important;background: #000000;">
+    <footer class="d-flex justify-content-center align-items-center" style="height: 100px;border-top: 1px solid rgba(50,50,50,0.67)!important;background: #000000;">
         <p style="font-weight: 500;color: rgb(98,98,98);font-size: 20px;font-family: 'Inter Bold';margin-top: 15px;">blockbusters© 2022<br>
             </p>
-            <button asp-area="" asp-page="/People/Index" class="btn btn-primary btn-secondary" type="button" style="background: rgb(44,44,44);color: rgb(159,159,159);position: absolute;right: 0;margin-right: 19px;margin-top: -2px;border-color: rgb(59,59,59);">Staff</button>
+            <a asp-page="/People/Index" style="margin-top: -32px;" >
+            <button  class="btn btn-primary btn-secondary" type="button" style="background: rgb(44,44,44);color: rgb(159,159,159);position: absolute;right: 0;margin-right: 19px;margin-top: -2px;border-color: rgb(59,59,59);">Staff</button>
+            </a>
     </footer>
     <script src="assets/js/dropdown-search-bs4.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
