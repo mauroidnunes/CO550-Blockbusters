@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using blockbusters.Data;
 using blockbusters.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace blockbusters.Pages.PeopleReviews
 {
+    [Authorize(Roles = "staff")]
     public class IndexModel : PageModel
     {
         private readonly blockbusters.Data.ApplicationDbContext _context;
@@ -18,12 +20,22 @@ namespace blockbusters.Pages.PeopleReviews
         {
             _context = context;
         }
-
+        public string CurrentFilter { get; set; }
+        public string CurrentSort { get; set; }
         public IList<PersonReview> PersonReview { get;set; }
 
-        public async Task OnGetAsync()
+        public async Task OnGetAsync(string searchString)
         {
-            PersonReview = await _context.PeopleReviews
+
+            IQueryable<PersonReview> studentsIQ = from s in _context.PeopleReviews select s;
+            CurrentFilter = searchString;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                studentsIQ = studentsIQ.Where(s => s.ReviewText.Contains(searchString));
+            }
+
+            PersonReview = await studentsIQ.AsNoTracking()
                 .Include(p => p.Movie)
                 .Include(p => p.Person).ToListAsync();
         }

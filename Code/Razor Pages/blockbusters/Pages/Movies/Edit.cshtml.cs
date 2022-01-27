@@ -65,8 +65,6 @@ namespace blockbusters.Pages.Movies
             //    return Page();
             //}
 
-            Movie.ContentLocation = Movie.ContentLocation;
-
             try
             {
                 if(UploadedFile != null && UploadedFile.Length != 0)

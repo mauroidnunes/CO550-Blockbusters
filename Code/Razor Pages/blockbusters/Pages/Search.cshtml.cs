@@ -37,7 +37,7 @@ namespace blockbusters.Pages
             PriceSort = sortOrder == "price" ? "price_desc" : "price";
             RatingSort = sortOrder == "rating" ? "rating_desc" : "rating";
 
-            CurrentFilter = searchString;
+                
 
             IQueryable<Movie> studentsIQ = from s in _context.Movies select s;
 

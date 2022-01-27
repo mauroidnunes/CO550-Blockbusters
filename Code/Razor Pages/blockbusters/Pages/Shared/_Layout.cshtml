@@ -39,14 +39,15 @@
                     </div>
             <div style="width: 70%;height: 72px;position: relative;text-align: center;">
                 <div class="d-flex justify-content-center" style="position: absolute;top: 0;left: 0;width: 100%;margin-top: 19px;">
-                    <a id="NavButtons" asp-page="/Index" style="color: white;"><i class="material-icons col" id="NavIcon" style="padding: 0px;margin: auto;margin-top: 4px;width: 24px;">home</i>
+                    <a id="NavButtons" class="Nav-Home" asp-page="/Index">
+                        <i class="material-icons col" id="NavIcon" style="padding: 0px;margin: auto;margin-top: 4px;width: 24px;">home</i>
                         <p id="NavText" class="col">Home</p>
                     </a>
-                    <a id="NavButtons" class="row" asp-page="/Explore">
+                    <a id="NavButtons" class="row Nav-Explore" asp-page="/Explore">
                         <i class="material-icons col" id="NavIcon" style="padding: 0px;margin: auto;margin-top: 4px;width: 24px;">explore</i>
                         <p id="NavText" class="col">Explore</p>
                     </a>
-                    <a id="NavButtons" class="row" asp-page="/Library">
+                    <a id="NavButtons" class="row Nav-Library" asp-page="/Library">
                         <i class="material-icons col" id="NavIcon" style="padding: 0px;margin: auto;margin-top: 4px;width: 24px;">video_library</i>
                         <p id="NavText" class="col">Library</p>
                     </a>

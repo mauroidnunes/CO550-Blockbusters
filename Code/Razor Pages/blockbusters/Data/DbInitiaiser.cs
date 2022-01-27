@@ -191,7 +191,8 @@ namespace blockbusters.Data
                     ContentLocation = "interstellar.jpg",
                     Price=12.99m,
                     Rating = 8.6,
-                    Genre = Genre.SciFi
+                    Genre = Genre.SciFi,
+                    MovieTrailer = "https://www.youtube.com/embed/zSWdZVtXT7E"
                 },
                 new Movie
                 {
@@ -204,7 +205,8 @@ namespace blockbusters.Data
                     ContentLocation = "azkaban.jpg",
                     Price=10.99m,
                     Rating = 7.9,
-                    Genre = Genre.Adventure
+                    Genre = Genre.Adventure,
+                    MovieTrailer = "https://www.youtube.com/embed/lAxgztbYDbs"
                 },
                 new Movie
                 {
@@ -216,7 +218,8 @@ namespace blockbusters.Data
                     ContentLocation = "khuda.jpg",
                     Price=9.99m,
                     Rating = 8.4,
-                    Genre = Genre.Thriller
+                    Genre = Genre.Thriller,
+                    MovieTrailer = "https://www.youtube.com/embed/mypSWkJr6W0"
                 },
                 new Movie
                 {
@@ -229,7 +232,8 @@ namespace blockbusters.Data
                     ContentLocation = "mahemir.jpg",
                     Price=2.99m,
                     Rating = 7.2,
-                    Genre = Genre.Romance
+                    Genre = Genre.Romance,
+                    MovieTrailer = "https://www.youtube.com/embed/I0-hzoSjBCU"
                 },
                 new Movie
                 {
@@ -242,7 +246,8 @@ namespace blockbusters.Data
                     ContentLocation = "howls.jpg",
                     Price=5.99m,
                     Rating = 8.2,
-                    Genre = Genre.Fantasy
+                    Genre = Genre.Fantasy,
+                    MovieTrailer = "https://www.youtube.com/embed/iwROgK94zcM"
                 },
                 new Movie
                 {
@@ -255,7 +260,8 @@ namespace blockbusters.Data
                     ContentLocation = "endgame.jpg",
                     Price=6.99m,
                     Rating = 8.4,
-                    Genre = Genre.Action
+                    Genre = Genre.Action,
+                    MovieTrailer = "https://www.youtube.com/embed/TcMBFSGVi1c"
                 },
                 new Movie
                 {
@@ -268,7 +274,8 @@ namespace blockbusters.Data
                     ContentLocation = "pulp fiction.jpg",
                     Price=8.99m,
                     Rating = 8.9,
-                    Genre = Genre.Mystery
+                    Genre = Genre.Mystery,
+                    MovieTrailer = "https://www.youtube.com/embed/s7EdQ4FqbhY"
                 },
                 new Movie
                 {
@@ -281,7 +288,8 @@ namespace blockbusters.Data
                     ContentLocation = "loveactually.jpg",
                     Price=9.99m,
                     Rating = 7.6,
-                    Genre = Genre.Romance
+                    Genre = Genre.Romance,
+                    MovieTrailer = "https://www.youtube.com/embed/H9Z3_ifFheQ"
                 },
                 new Movie
                 {
@@ -294,7 +302,8 @@ namespace blockbusters.Data
                     ContentLocation = "uncutgems.jpg",
                     Price=40.99m,
                     Rating = 7.4,
-                    Genre = Genre.Comedy
+                    Genre = Genre.Comedy,
+                    MovieTrailer = "https://www.youtube.com/embed/vTfJp2Ts9X8"
                 },
                 new Movie
                 {
@@ -306,7 +315,8 @@ namespace blockbusters.Data
                     ContentLocation = "insidious.jpg",
                     Price=20.99m,
                     Rating = 6.8,
-                    Genre = Genre.Horror
+                    Genre = Genre.Horror,
+                    MovieTrailer = "https://www.youtube.com/embed/zuZnRUcoWos"
                 },
             };
 

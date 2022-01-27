@@ -2,74 +2,74 @@
 @model blockbusters.Pages.MyAccountModel
 @{
 }
-
-<h1>Details</h1>
-
-<div>
-    <h4>Person</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Person.Email)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Person.Email)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Person.FirstName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Person.FirstName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Person.LastName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Person.LastName)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-page="People/Edit" asp-route-id="@Model.Person.PersonID">Edit</a> |
-</div>
-<h4>Payment</h4>
-<hr />
-<dl class="row">
-    <dt class="col-sm-2">
-        @Html.DisplayNameFor(model => model.Person.Payment.CardholderName)
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.Person.Payment.CardholderName)
-    </dd>
-    <dt class="col-sm-2">
-        @Html.DisplayNameFor(model => model.Person.Payment.CardNumber)
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.Person.Payment.CardNumber)
-    </dd>
-    <dt class="col-sm-2">
-        @Html.DisplayNameFor(model => model.Person.Payment.ExpirationDate)
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.Person.Payment.ExpirationDate)
-    </dd>
-    <dt class="col-sm-2">
-        @Html.DisplayNameFor(model => model.Person.Payment.CCV)
-    </dt>
-    <dd class="col-sm-10">
-        @Html.DisplayFor(model => model.Person.Payment.CCV)
-    </dd>
-</dl>
-
-<div>
-    <a asp-page="Payments/Edit" asp-route-id="@Model.Person.PaymentID">Edit</a> |
-</div>
-
-<div class="text-center">
-    <h1>Upload File</h1>
-</div>
  
-<div class="text-center">
-    <h1>Upload File</h1>
-</div>
- 
+<div><img src="~/assets/img/9.png" style="width: 100%;z-index: -100;position: fixed;transform: scale(1.10);filter: blur(58px) brightness(20%) saturate(133%);"></div>
+<p id="NavText-14" class="col" style="padding-top: 100px;color: rgb(255,255,255);font-size: 22px;margin-top: 9px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;text-align: center;margin-bottom: 50px;">My Account</p>
+
+
+<div class="row">
+    <div class="col-lg-6">
+        <div style="margin: 0px;padding: 0px;">
+            <div class="row justify-content-center" style="margin: -1px;">
+                <div style="height: 367px;transition: all 1s;padding: 21px;background: #232323;border-radius: 7px;margin-top: 20px;margin: 6px;max-width: 572px;width: 100%;padding-bottom: 39px;">
+                    <p id="NavText-14" class="col" style="color: rgb(255,255,255);font-size: 21px;margin-top: 9px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;text-align: center;margin-bottom: 14px;">Account</p>
+                    <table class="table table-dark" style="background: transparent;">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Email</th>
+                                <td>@Html.DisplayFor(model => model.Person.Email)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">First Name</th>
+                                <td>@Html.DisplayFor(model => model.Person.FirstName)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Last Name</th>
+                                <td>@Html.DisplayFor(model => model.Person.LastName)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="text-center" style="margin-top: 67px;">
+                        <a asp-page="EditAccount" asp-route-id="@Model.Person.PersonID">
+                        <button onclick="history.back()" class="btn btn-primary btn-secondary" type="button" style="background: rgb(55,55,55);color: rgb(159,159,159);margin-top: 2px;border-color: rgb(59,59,59);">Edit Account Details</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="col-lg-6">
+        <div style="margin: 0px;padding: 0px;">
+            <div class="row justify-content-center" style="margin: -1px;">
+                <div style="transition: all 1s;padding: 21px;background: #232323;border-radius: 7px;margin-top: 20px;margin: 6px;max-width: 572px;width: 100%;padding-bottom: 39px;">
+                    <p id="NavText-14" class="col" style="color: rgb(255,255,255);font-size: 21px;margin-top: 9px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;text-align: center;margin-bottom: 14px;">Payment</p>
+                    <table class="table table-dark" style="background: transparent;">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Cardholder Name</th>
+                                <td>@Html.DisplayFor(model => model.Person.Payment.CardholderName)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Card Number</th>
+                                <td>@Html.DisplayFor(model => model.Person.Payment.CardNumber)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Expiration Date</th>
+                                <td>@Html.DisplayFor(model => model.Person.Payment.ExpirationDate)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">CCV</th>
+                                <td>@Html.DisplayFor(model => model.Person.Payment.CCV)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="text-center">
+                        <a asp-page="EditPayment" asp-route-id="@Model.Person.PaymentID">
+                        <button class="btn btn-primary btn-secondary" type="button" style="background: rgb(55,55,55);color: rgb(159,159,159);margin-top: 2px;border-color: rgb(59,59,59);">Edit Payment Details</button>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

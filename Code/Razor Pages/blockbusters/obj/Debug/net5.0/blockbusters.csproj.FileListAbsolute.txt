@@ -1510,3 +1510,6 @@ C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbuster
 C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_SharedScripts.cshtml.g.cs
 C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_SharedStyles.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\EditPayment.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\EditAccount.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Library.cshtml.g.cs

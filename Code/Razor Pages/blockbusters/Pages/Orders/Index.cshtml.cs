@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using blockbusters.Data;
 using blockbusters.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace blockbusters.Pages.Orders
 {
+    [Authorize(Roles = "staff")]
     public class IndexModel : PageModel
     {
         private readonly blockbusters.Data.ApplicationDbContext _context;
@@ -20,10 +22,33 @@ namespace blockbusters.Pages.Orders
         }
 
         public IList<Order> Order { get;set; }
+        public string DateSort { get; set; }
+        public string CurrentFilter { get; set; }
+        public string CurrentSort { get; set; }
 
-        public async Task OnGetAsync()
+        public async Task OnGetAsync(string sortOrder, string searchString)
         {
-            Order = await _context.Orders
+            DateSort = String.IsNullOrEmpty(sortOrder) ? "date_desc" : "";
+            CurrentFilter = searchString;
+
+            IQueryable<Order> studentsIQ = from s in _context.Orders select s;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                studentsIQ = studentsIQ.Where(s => s.Person.Email.Contains(searchString));
+            }
+
+            switch (sortOrder)
+            {
+                case "date_desc":
+                    studentsIQ = studentsIQ.OrderByDescending(s => s.OrderDate);
+                    break;
+                default:
+                    studentsIQ = studentsIQ.OrderBy(s => s.OrderDate);
+                    break;
+            }
+
+            Order = await studentsIQ.AsNoTracking()
                 .Include(o => o.Person).ToListAsync();
         }
     }

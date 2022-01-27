@@ -6,10 +6,65 @@
     <title>@ViewData["Title"] - blockbusters</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Black.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Black%20Italic.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Bold.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Bold%20Italic.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Extra%20Bold.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Extra%20Bold%20Italic.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Italic.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Medium.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Medium%20Italic.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Regular.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Semi%20Bold.css">
+    <link rel="stylesheet" href="~/assets/css/Inter%20Semi%20Bold%20Italic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="~/assets/css/dropdown-search-bs4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="~/assets/css/iframe.css">
+    <link rel="stylesheet" href="~/assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="~/assets/css/Responsive-Youtube-Embed.css">
+    <link rel="stylesheet" href="~/assets/css/splide.min.css">
+    <link rel="stylesheet" href="~/assets/css/styles.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" style="padding: 0px;height: 72px;z-index: 50;background: linear-gradient(rgba(0,0,0,0.75) 3%, rgba(255,255,255,0));background: black;border-bottom: 1px solid #a7a7a7;">
+        <div class="container-fluid d-flex justify-content-between">
+            <div class="d-flex justify-content-start" style="width: 15%;height: 72px;">
+                <a id="NavButtons" asp-page="/Index" style="color: rgb(255,255,255);margin: auto;padding: 0px;margin-left: 15px;"><img class="logo" src="/images/logofinal.svg" href="index.html"></a></div>
+            <div style="width: 70%;height: 72px;position: relative;text-align: center;">
+                <div class="d-flex justify-content-center" style="position: absolute;top: 0;left: 0;width: 100%;margin-top: 19px;">
+                    <a id="NavButtons" class="Nav-People" asp-page="/People/Index">
+                        <i class="material-icons col" id="NavIcon" style="padding: 0px;margin: auto;margin-top: 4px;width: 24px;">people</i>
+                        <p id="NavText" class="col">People</p>
+                    </a>
+                    <a id="NavButtons" class="row Nav-Movies" asp-page="/Movies/Index" style="height: 28px;text-align: center;">
+                        <i class="material-icons col" id="NavIcon" style="padding: 0px;margin: auto;margin-top: 4px;width: 24px;">local_movies</i>
+                        <p id="NavText" class="col">Movies</p>
+                    </a>
+                    <a id="NavButtons" class="row Nav-Orders" asp-page="/Orders/Index">
+                        <i class="material-icons col" id="NavIcon" style="padding: 0px;margin: auto;margin-top: 4px;width: 24px;">shopping_basket</i>
+                        <p id="NavText" class="col">Orders</p>
+                    </a>
+                    <a id="NavButtons" class="row Nav-Reviews" asp-page="/PeopleReviews/Index">
+                        <i class="material-icons col" id="NavIcon" style="padding: 0px;margin: auto;margin-top: 4px;width: 24px;">rate_review</i>
+                        <p id="NavText" class="col">Reviews</p>
+                    </a>
+                    </div>
+            </div>
+            <div class="d-flex justify-content-end" style="width: 15%;height: 72px;">
+                <div class="dropdown" style="padding: 0px;margin: auto;margin-right: 15px;border-radius: 7px;"><button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 0px;/*margin: auto;*//*margin-right: 15px;*//*border-radius: 7px;*/height: 35px;width: 35px;background: rgb(54,54,54);border-color: rgb(81,81,81);z-index: 113;"><i class="material-icons" style="padding-top: 4px;">person</i></button>
+                    <div class="dropdown-menu" style="margin-left: -124px;margin-top: 8px;background: rgb(40,40,40);border: 1px solid rgba(50,50,50,0.67)!important;">
+                        <partial name="_LoginPartial" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+@*        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">blockbusters</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -34,18 +89,17 @@
                     <partial name="_LoginPartial" />
                 </div>
             </div>
-        </nav>
+        </nav>*@
     </header>
-    <div class="container">
+    <div class="container content-barrier" style="padding-top:100px">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - blockbusters - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
+    <footer class="d-flex justify-content-center align-items-center" style="height: 100px;border-top: 1px solid rgba(50,50,50,0.67)!important;background: #000000;">
+        <p style="font-weight: 500;color: rgb(44,44,44);font-size: 15px;font-family: 'Inter Semi Bold Italic';margin-top: 50px;position: absolute;">Staff Access<br></p>
+        <p style="font-weight: 500;color: rgb(98,98,98);font-size: 20px;font-family: 'Inter Bold';margin-top: -8px;">blockbusters© 2022<br></p>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

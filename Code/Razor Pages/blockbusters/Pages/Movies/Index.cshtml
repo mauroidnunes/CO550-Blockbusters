@@ -7,9 +7,36 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
+        <div class="row" style="border-radius: 7px;background: #323232;margin-bottom: 11px;padding: 26px;padding-right: 17px;padding-left: 17px;margin-right: 0px;margin-left: 0px;padding-bottom: 0px;">
+            <div class="col" style="width: auto;">
+                <div>
+                    <form asp-page="./Index" method="get" style="">
+                        <input type="search" name="SearchString" style="width: 100%;height: 41px;padding: 0px;border-radius: 5px;border-style: none;min-width: 300px;margin-bottom: 26px;padding-right: 15px;padding-left: 15px;" placeholder="Search Movies">
+                    </form>
+                </div>
+            </div>
+            <div class="flex-container filters" style="margin-bottom: 0px;">
+                <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">
+                    <button class="btn btn-primary btn-secondary" type="button" style="background: rgb(55,55,55);color: rgb(159,159,159);border-color: rgb(59,59,59);margin-left: 4px;margin-right: 4px;margin-bottom: 26px;">Title</button>
+                </a>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.DateSort">
+                    <button class="btn btn-primary btn-secondary" type="button" style="background: rgb(55,55,55);color: rgb(159,159,159);border-color: rgb(59,59,59);margin-right: 4px;margin-left: 4px;margin-bottom: 26px;">Release Date</button>
+                </a>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.PriceSort">
+                    <button class="btn btn-primary btn-secondary" type="button" style="background: rgb(55,55,55);color: rgb(159,159,159);border-color: rgb(59,59,59);margin-right: 4px;margin-left: 4px;margin-bottom: 26px;">Price</button>
+                </a>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.RatingSort">
+                    <button class="btn btn-primary btn-secondary" type="button" style="background: rgb(55,55,55);color: rgb(159,159,159);border-color: rgb(59,59,59);margin-left: 4px;margin-right: 4px;margin-bottom: 26px;">Rating</button>
+                </a>
+                <a asp-page="./Index">
+                    <button class="btn btn-primary btn-secondary" type="button" style="background: rgb(55,55,55);color: rgb(159,159,159);border-color: rgb(59,59,59);margin-left: 4px;margin-right: 4px;padding-bottom: 0px;padding-top: 5px;margin-bottom: 26px;"><i class="material-icons">refresh</i></button>
+                </a>
+                <a asp-page="Create">
+                    <button class="btn btn-primary btn-secondary" type="button" style="background: rgb(19 98 14);color: rgb(159,159,159);border-color: rgb(59,59,59);margin-left: 4px;margin-right: 4px;padding-bottom: 0px;padding-top: 5px;margin-bottom: 26px;"><i class="material-icons">add</i></button>
+                </a>
+            </div>
+        </div>
+
 <table class="table">
     <thead>
         <tr>
@@ -29,7 +56,7 @@
                 @Html.DisplayNameFor(model => model.Movie[0].LeadingProducer)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Movie[0].ContentLocation)
+                Content Preview
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Movie[0].Price)
@@ -62,7 +89,7 @@
                 @Html.DisplayFor(modelItem => item.LeadingProducer)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ContentLocation)
+                <img class="thumbnail-image" src="/images/@Html.DisplayFor(modelItem => item.ContentLocation)" style="height: 132px;width: 100px;">
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Price)

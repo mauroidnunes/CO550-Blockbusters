@@ -7,9 +7,23 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
+        <div class="row" style="border-radius: 7px;background: #323232;margin-bottom: 11px;padding: 26px;padding-right: 17px;padding-left: 17px;margin-right: 0px;margin-left: 0px;padding-bottom: 0px;">
+            <div class="col" style="width: auto;">
+                <div>
+                    <form asp-page="./Index" method="get" style="">
+                        <input type="search" name="SearchString" style="width: 100%;height: 41px;padding: 0px;border-radius: 5px;border-style: none;min-width: 300px;margin-bottom: 26px;padding-right: 15px;padding-left: 15px;" placeholder="Search Emails">
+                    </form>
+                </div>
+            </div>
+            <div class="flex-container filters" style="margin-bottom: 0px;">
+                <a asp-page="./Index">
+                    <button class="btn btn-primary btn-secondary" type="button" style="background: rgb(55,55,55);color: rgb(159,159,159);border-color: rgb(59,59,59);margin-left: 4px;margin-right: 4px;padding-bottom: 0px;padding-top: 5px;margin-bottom: 26px;"><i class="material-icons">refresh</i></button>
+                </a>
+                <a asp-page="Create">
+                    <button class="btn btn-primary btn-secondary" type="button" style="background: rgb(19 98 14);color: rgb(159,159,159);border-color: rgb(59,59,59);margin-left: 4px;margin-right: 4px;padding-bottom: 0px;padding-top: 5px;margin-bottom: 26px;"><i class="material-icons">add</i></button>
+                </a>
+            </div>
+        </div>
 <table class="table">
     <thead>
         <tr>
@@ -24,9 +38,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Person[0].StaffAccount)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Person[0].Payment)
             </th>
             <th></th>
         </tr>
@@ -45,9 +56,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.StaffAccount)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Payment.CCV)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.PersonID">Edit</a> |

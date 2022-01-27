@@ -23,7 +23,7 @@
                         </div>
                     </div>
                     <div class="col video-padding" style="padding: 20px;padding-left: 0px;">
-                        <div class="video-container" style="width: 100%;height: 100%;border-radius: 6px;"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/KSJ7Kfonn7I?loop=1&amp;playlist=KSJ7Kfonn7I" width="853" height="480"></iframe></div>
+                        <div class="video-container" style="width: 100%;height: 100%;border-radius: 6px;"><iframe allowfullscreen="" frameborder="0" src="@Html.DisplayFor(model => model.Movie.MovieTrailer)" width="853" height="480"></iframe></div>
                     </div>
                 </div>
             </div>
@@ -32,78 +32,108 @@
             <div id="primary-slider1" class="splide" style="margin-bottom: 34px;">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
-                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
-                                    <div style="margin-top: -69px;margin-left: 12px;">
-                                        <p id="NavText-23" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
-                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+
+                                  <li class="splide__slide" style="width: 300px;height: 200px;">
+                                   <a class="thumbnail-link" style="text-decoration: none;" href="/Video?id=1">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="/images/insidious.jpg" >
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-26" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;text-shadow:0px 0px 10px black;">Insidious</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">2011</label>
+                                            <label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">6.8</label></div>
                                     </div>
                                 </div>
                             </a></li>
-                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
-                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
-                                    <div style="margin-top: -69px;margin-left: 12px;">
-                                        <p id="NavText-24" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
-                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                               <li class="splide__slide" style="width: 300px;height: 200px;">
+                                   <a class="thumbnail-link" style="text-decoration: none;" href="/Video?id=2">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="/images/uncutgems.jpg" >
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-26" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;text-shadow:0px 0px 10px black;">Uncut Gems</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">2019</label>
+                                            <label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">7.4</label></div>
                                     </div>
                                 </div>
                             </a></li>
-                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
-                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
-                                    <div style="margin-top: -69px;margin-left: 12px;">
-                                        <p id="NavText-25" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
-                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                               <li class="splide__slide" style="width: 300px;height: 200px;">
+                                   <a class="thumbnail-link" style="text-decoration: none;" href="/Video?id=3">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="/images/loveactually.jpg" >
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-26" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;text-shadow:0px 0px 10px black;">Love, Actually</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">2003</label>
+                                            <label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">7.6</label></div>
                                     </div>
                                 </div>
                             </a></li>
-                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
-                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
-                                    <div style="margin-top: -69px;margin-left: 12px;">
-                                        <p id="NavText-26" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
-                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                               <li class="splide__slide" style="width: 300px;height: 200px;">
+                                   <a class="thumbnail-link" style="text-decoration: none;" href="/Video?id=4">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="/images/pulp fiction.jpg" >
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-26" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;text-shadow:0px 0px 10px black;">Pulp Fiction</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">1994</label>
+                                            <label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">8.9</label></div>
                                     </div>
                                 </div>
                             </a></li>
-                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
-                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
-                                    <div style="margin-top: -69px;margin-left: 12px;">
-                                        <p id="NavText-27" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
-                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                               <li class="splide__slide" style="width: 300px;height: 200px;">
+                                   <a class="thumbnail-link" style="text-decoration: none;" href="/Video?id=5">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="/images/endgame.jpg" >
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-26" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;text-shadow:0px 0px 10px black;">Avengers: Endgame</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">2019</label>
+                                            <label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">8.4</label></div>
                                     </div>
                                 </div>
                             </a></li>
-                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
-                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
-                                    <div style="margin-top: -69px;margin-left: 12px;">
-                                        <p id="NavText-28" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
-                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                               <li class="splide__slide" style="width: 300px;height: 200px;">
+                                   <a class="thumbnail-link" style="text-decoration: none;" href="/Video?id=6">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="/images/howls.jpg" >
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-26" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;text-shadow:0px 0px 10px black;">Howl&#x27;s Moving Castle</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">2005</label>
+                                            <label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">8.2</label></div>
                                     </div>
                                 </div>
                             </a></li>
-                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
-                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
-                                    <div style="margin-top: -69px;margin-left: 12px;">
-                                        <p id="NavText-29" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
-                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                               <li class="splide__slide" style="width: 300px;height: 200px;">
+                                   <a class="thumbnail-link" style="text-decoration: none;" href="/Video?id=7">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="/images/mahemir.jpg" >
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-26" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;text-shadow:0px 0px 10px black;">Mah E Mir</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">2016</label>
+                                            <label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">7.2</label></div>
                                     </div>
                                 </div>
                             </a></li>
-                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
-                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
-                                    <div style="margin-top: -69px;margin-left: 12px;">
-                                        <p id="NavText-30" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
-                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                               <li class="splide__slide" style="width: 300px;height: 200px;">
+                                   <a class="thumbnail-link" style="text-decoration: none;" href="/Video?id=8">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="/images/khuda.jpg" >
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-26" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;text-shadow:0px 0px 10px black;">Khuda Kay Liye</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">2007</label>
+                                            <label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">8.4</label></div>
                                     </div>
                                 </div>
                             </a></li>
-                        <li class="splide__slide" style="width: 300px;height: 200px;"><a href="#" style="text-decoration: none;">
-                                <div><img src="assets/img/2.png" style="width: 300px;height: 197px;border-radius: 7px;object-fit: cover;">
-                                    <div style="margin-top: -69px;margin-left: 12px;">
-                                        <p id="NavText-31" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;">Movie Title</p>
-                                        <div style="height: 28px;margin-top: -18px;"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(177,177,177,0.29);font-size: 14px;">Release Date</label><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(195,195,195,0.29);font-size: 14px;">Rating</label></div>
+                               <li class="splide__slide" style="width: 300px;height: 200px;">
+                                   <a class="thumbnail-link" style="text-decoration: none;" href="/Video?id=9">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="/images/azkaban.jpg" >
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-26" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;text-shadow:0px 0px 10px black;">Harry Potter and the Prisoner of Azkaban</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">2004</label>
+                                            <label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">7.9</label></div>
                                     </div>
                                 </div>
                             </a></li>
+                               <li class="splide__slide" style="width: 300px;height: 200px;">
+                                   <a class="thumbnail-link" style="text-decoration: none;" href="/Video?id=10">
+                                <div class="thumbnail-div"><img class="thumbnail-image" src="/images/interstellar.jpg" >
+                                    <div class="thumbnail-container">
+                                        <p id="NavText-26" class="col" style="color: rgb(255,255,255);font-size: 21px;padding-right: 2px;padding-left: 2PX;font-family: 'Inter Bold';max-width: 100%;text-shadow:0px 0px 10px black;">Interstellar</p>
+                                        <div class="thumbnail-details"><label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">2014</label>
+                                            <label style="color: white;font-family: 'Inter Medium';padding-right: 10px;padding-left: 10px;padding-bottom: 2px;padding-top: 2px;border-radius: 2px;margin-right: 5px;background: rgba(0,0,0,0.8);font-size: 14px;">8.6</label></div>
+                                    </div>
+                                </div>
+                            </a></li>
+
                     </ul>
                 </div>
             </div>

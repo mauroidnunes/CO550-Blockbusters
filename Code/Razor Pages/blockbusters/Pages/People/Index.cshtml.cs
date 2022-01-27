@@ -21,12 +21,22 @@ namespace blockbusters.Pages.People
         {
             _context = context;
         }
+        public string CurrentFilter { get; set; }
+        public string CurrentSort { get; set; }
 
         public IList<Person> Person { get;set; }
 
-        public async Task OnGetAsync()
+        public async Task OnGetAsync(string sortOrder, string searchString)
         {
-            Person = await _context.People
+            IQueryable<Person> studentsIQ = from s in _context.People select s;
+            CurrentFilter = searchString;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                studentsIQ = studentsIQ.Where(s => s.Email.Contains(searchString));
+            }
+
+            Person = await studentsIQ.AsNoTracking()
                 .Include(p => p.Payment).ToListAsync();
         }
     }
