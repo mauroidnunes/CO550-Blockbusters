@@ -493,7 +493,6 @@ C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbuster
 C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\bin\Debug\net5.0\blockbusters.runtimeconfig.json
 C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\bin\Debug\net5.0\blockbusters.runtimeconfig.dev.json
 C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\bin\Debug\net5.0\blockbusters.dll
-C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\bin\Debug\net5.0\ref\blockbusters.dll
 C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\bin\Debug\net5.0\blockbusters.pdb
 C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\bin\Debug\net5.0\blockbusters.Views.dll
 C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\bin\Debug\net5.0\blockbusters.Views.pdb
@@ -1513,3 +1512,4 @@ C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbuster
 C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\EditPayment.cshtml.g.cs
 C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\EditAccount.cshtml.g.cs
 C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\Razor\Pages\Library.cshtml.g.cs
+C:\Users\Haroon\Documents\GitHub\CO550-Blockbusters\Code\Razor Pages\blockbusters\obj\Debug\net5.0\refint\blockbusters.dll

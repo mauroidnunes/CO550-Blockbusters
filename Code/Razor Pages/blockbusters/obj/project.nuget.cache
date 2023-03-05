@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/lBFzcjC4DPLfd7eHsU7fqU2uY9xVuhgk3kWSH01qczr5DW09aa3Ev/dQrklHzXEcH3QsAhwDm2JOrtiPcswSg==",
+  "dgSpecHash": "YLy0T9dTiQ3BoH92hAybOb+DZnMDxEzrp2ps52SM9c0+6uO5M6XWaX3hMmXqZBQq7WbAEvyYbMcYDFIeqnqLfg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Haroon\\Documents\\GitHub\\CO550-Blockbusters\\Code\\Razor Pages\\blockbusters\\blockbusters.csproj",
   "expectedPackageFiles": [
@@ -136,7 +136,11 @@
     "C:\\Users\\Haroon\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Haroon\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Haroon\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Haroon\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\Haroon\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\Haroon\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
+    "C:\\Users\\Haroon\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Haroon\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Haroon\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

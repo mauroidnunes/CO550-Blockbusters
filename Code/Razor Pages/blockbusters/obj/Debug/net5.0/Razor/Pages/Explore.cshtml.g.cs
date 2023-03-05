@@ -34,8 +34,10 @@ using blockbusters.Data;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fea5f9313a0c940f8df11898cd215937c04bce5e", @"/Pages/Explore.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cfcc27950b7094bfaeb261a4a0ac109efb44fc40", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7c3d7d21fabd7b7db4aecaebdea7d5cce5215738", @"/Pages/_ViewImports.cshtml")]
+    #nullable restore
     public class Pages_Explore : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
+    #nullable disable
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-page", "./Search", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-route-genreType", "Action", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -95,7 +97,7 @@ collection[0].style.color = ""white"";
             <ul class=""splide__list"">
                 <li class=""splide__slide"" style=""width: 300px;height: 95px;"">
                     ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e9129", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e9175", async() => {
                 WriteLiteral(@"
                         <div class=""thumbnail-div"">
                             <div class=""thumbnail-container"" style=""margin: 0px;background: #323232;height: 95px;border-radius: 7px;width: 300px;"">
@@ -125,7 +127,7 @@ collection[0].style.color = ""white"";
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </li>\r\n\r\n                <li class=\"splide__slide\" style=\"width: 300px;height: 95px;\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e11644", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e11690", async() => {
                 WriteLiteral(@"
                         <div class=""thumbnail-div"">
                             <div class=""thumbnail-container"" style=""margin: 0px;background: #323232;height: 95px;border-radius: 7px;width: 300px;"">
@@ -155,7 +157,7 @@ collection[0].style.color = ""white"";
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </li>\r\n\r\n                <li class=\"splide__slide\" style=\"width: 300px;height: 95px;\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e14163", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e14209", async() => {
                 WriteLiteral(@"
                         <div class=""thumbnail-div"">
                             <div class=""thumbnail-container"" style=""margin: 0px;background: #323232;height: 95px;border-radius: 7px;width: 300px;"">
@@ -185,7 +187,7 @@ collection[0].style.color = ""white"";
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </li>\r\n\r\n\r\n                <li class=\"splide__slide\" style=\"width: 300px;height: 95px;\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e16683", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e16729", async() => {
                 WriteLiteral(@"
                         <div class=""thumbnail-div"">
                             <div class=""thumbnail-container"" style=""margin: 0px;background: #323232;height: 95px;border-radius: 7px;width: 300px;"">
@@ -215,7 +217,7 @@ collection[0].style.color = ""white"";
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </li>\r\n\r\n                <li class=\"splide__slide\" style=\"width: 300px;height: 95px;\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e19200", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e19246", async() => {
                 WriteLiteral(@"
                         <div class=""thumbnail-div"">
                             <div class=""thumbnail-container"" style=""margin: 0px;background: #323232;height: 95px;border-radius: 7px;width: 300px;"">
@@ -245,7 +247,7 @@ collection[0].style.color = ""white"";
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </li>\r\n\r\n                <li class=\"splide__slide\" style=\"width: 300px;height: 95px;\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e21717", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e21763", async() => {
                 WriteLiteral(@"
                         <div class=""thumbnail-div"">
                             <div class=""thumbnail-container"" style=""margin: 0px;background: #323232;height: 95px;border-radius: 7px;width: 300px;"">
@@ -275,7 +277,7 @@ collection[0].style.color = ""white"";
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </li>\r\n\r\n                <li class=\"splide__slide\" style=\"width: 300px;height: 95px;\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e24234", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e24280", async() => {
                 WriteLiteral(@"
                         <div class=""thumbnail-div"">
                             <div class=""thumbnail-container"" style=""margin: 0px;background: #323232;height: 95px;border-radius: 7px;width: 300px;"">
@@ -305,7 +307,7 @@ collection[0].style.color = ""white"";
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </li>\r\n\r\n                <li class=\"splide__slide\" style=\"width: 300px;height: 95px;\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e26750", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e26796", async() => {
                 WriteLiteral(@"
                         <div class=""thumbnail-div"">
                             <div class=""thumbnail-container"" style=""margin: 0px;background: #323232;height: 95px;border-radius: 7px;width: 300px;"">
@@ -335,7 +337,7 @@ collection[0].style.color = ""white"";
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </li>\r\n\r\n                <li class=\"splide__slide\" style=\"width: 300px;height: 95px;\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e29269", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e29315", async() => {
                 WriteLiteral(@"
                         <div class=""thumbnail-div"">
                             <div class=""thumbnail-container"" style=""margin: 0px;background: #323232;height: 95px;border-radius: 7px;width: 300px;"">
@@ -365,7 +367,7 @@ collection[0].style.color = ""white"";
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </li>\r\n\r\n                <li class=\"splide__slide\" style=\"width: 300px;height: 95px;\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e31787", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e31833", async() => {
                 WriteLiteral(@"
                         <div class=""thumbnail-div"">
                             <div class=""thumbnail-container"" style=""margin: 0px;background: #323232;height: 95px;border-radius: 7px;width: 300px;"">
@@ -395,7 +397,7 @@ collection[0].style.color = ""white"";
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </li>\r\n\r\n                <li class=\"splide__slide\" style=\"width: 300px;height: 95px;\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e34305", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e34351", async() => {
                 WriteLiteral(@"
                         <div class=""thumbnail-div"">
                             <div class=""thumbnail-container"" style=""margin: 0px;background: #323232;height: 95px;border-radius: 7px;width: 300px;"">
@@ -425,7 +427,7 @@ collection[0].style.color = ""white"";
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                </li>\r\n\r\n\r\n                <li class=\"splide__slide\" style=\"width: 300px;height: 95px;\">\r\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e36829", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e36875", async() => {
                 WriteLiteral(@"
                         <div class=""thumbnail-div"">
                             <div class=""thumbnail-container"" style=""margin: 0px;background: #323232;height: 95px;border-radius: 7px;width: 300px;"">
@@ -477,7 +479,7 @@ collection[0].style.color = ""white"";
 #line hidden
 #nullable disable
             WriteLiteral("                    <li class=\"splide__slide\" style=\"width: 300px;height: 200px;\">\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e40058", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fea5f9313a0c940f8df11898cd215937c04bce5e40104", async() => {
                 WriteLiteral("\r\n                            <div class=\"thumbnail-div\">\r\n                                <img class=\"thumbnail-image\"");
                 BeginWriteAttribute("src", " src=\"", 11308, "\"", 11343, 2);
                 WriteAttributeValue("", 11314, "/images/", 11314, 8, true);
@@ -936,16 +938,26 @@ WriteAttributeValue("", 11322, item.ContentLocation, 11322, 21, false);
 </div>");
         }
         #pragma warning restore 1998
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<blockbusters.Pages.ExploreModel> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<blockbusters.Pages.ExploreModel> Html { get; private set; } = default!;
+        #nullable disable
         public global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary<blockbusters.Pages.ExploreModel> ViewData => (global::Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary<blockbusters.Pages.ExploreModel>)PageContext?.ViewData;
         public blockbusters.Pages.ExploreModel Model => ViewData.Model;
     }
